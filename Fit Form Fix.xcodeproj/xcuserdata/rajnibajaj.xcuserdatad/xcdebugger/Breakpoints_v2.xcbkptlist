@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4C1DDE3C-F907-4FA8-802B-9E3B5284FC9D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "93D0D384-0945-4AA9-B3BB-30B831432153"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Gym App/Main/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "408"
+            endingLineNumber = "408"
+            landmarkName = "countSquats(bodyParts:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B49A4F58-07DD-4AA3-9AAF-49B1990385D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Gym App/Home/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "383"
+            endingLineNumber = "383"
+            landmarkName = "countSquats(bodyParts:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B49A4F58-07DD-4AA3-9AAF-49B1990385D4 - faebd898f3eba0d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Swift.MainActor () -&gt; () in Gym_App.MainViewController.countSquats(bodyParts: Swift.Dictionary&lt;__C.VNHumanBodyPoseObservationJointName, __C.VNRecognizedPoint&gt;) -&gt; ()"
+                  moduleName = "Gym App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/All/My%20Work%20/Gym%20App/Gym%20App/Home/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "383"
+                  endingLineNumber = "383"
+                  offsetFromSymbolStart = "532">
+               </Location>
+               <Location
+                  uuid = "B49A4F58-07DD-4AA3-9AAF-49B1990385D4 - df7e2bec8c220edb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Gym_App.MainViewController.countSquats(bodyParts: Swift.Dictionary&lt;__C.VNHumanBodyPoseObservationJointName, __C.VNRecognizedPoint&gt;) -&gt; ()"
+                  moduleName = "Gym App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/All/My%20Work%20/Gym%20App/Gym%20App/Home/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "383"
+                  endingLineNumber = "383"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2E3A17B-E7E2-4F64-B575-FC9D3543CAE7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Gym App/Home/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "389"
+            endingLineNumber = "389"
+            landmarkName = "countSquats(bodyParts:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C2E3A17B-E7E2-4F64-B575-FC9D3543CAE7 - 7006c3ed9c067422"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Gym_App.MainViewController.countSquats(bodyParts: Swift.Dictionary&lt;__C.VNHumanBodyPoseObservationJointName, __C.VNRecognizedPoint&gt;) -&gt; ()"
+                  moduleName = "Gym App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/All/My%20Work%20/Gym%20App/Gym%20App/Home/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "389"
+                  endingLineNumber = "389"
+                  offsetFromSymbolStart = "7952">
+               </Location>
+               <Location
+                  uuid = "C2E3A17B-E7E2-4F64-B575-FC9D3543CAE7 - 1681464771b0f9c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 @Swift.MainActor () -&gt; () in Gym_App.MainViewController.countSquats(bodyParts: Swift.Dictionary&lt;__C.VNHumanBodyPoseObservationJointName, __C.VNRecognizedPoint&gt;) -&gt; ()"
+                  moduleName = "Gym App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/All/My%20Work%20/Gym%20App/Gym%20App/Home/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "390"
+                  endingLineNumber = "390"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "C2E3A17B-E7E2-4F64-B575-FC9D3543CAE7 - faebd898f3eba3e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Swift.MainActor () -&gt; () in Gym_App.MainViewController.countSquats(bodyParts: Swift.Dictionary&lt;__C.VNHumanBodyPoseObservationJointName, __C.VNRecognizedPoint&gt;) -&gt; ()"
+                  moduleName = "Gym App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/All/My%20Work%20/Gym%20App/Gym%20App/Home/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "389"
+                  endingLineNumber = "389"
+                  offsetFromSymbolStart = "532">
+               </Location>
+               <Location
+                  uuid = "C2E3A17B-E7E2-4F64-B575-FC9D3543CAE7 - faebd898f3eba3c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Swift.MainActor () -&gt; () in Gym_App.MainViewController.countSquats(bodyParts: Swift.Dictionary&lt;__C.VNHumanBodyPoseObservationJointName, __C.VNRecognizedPoint&gt;) -&gt; ()"
+                  moduleName = "Gym App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/All/My%20Work%20/Gym%20App/Gym%20App/Home/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "390"
+                  endingLineNumber = "390"
+                  offsetFromSymbolStart = "496">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39313452-657C-4207-8235-CF160DB1F5DE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Gym App/Home/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "400"
+            endingLineNumber = "400"
+            landmarkName = "countSquats(bodyParts:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "39313452-657C-4207-8235-CF160DB1F5DE - 7006c3ed9c06752a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Gym_App.MainViewController.countSquats(bodyParts: Swift.Dictionary&lt;__C.VNHumanBodyPoseObservationJointName, __C.VNRecognizedPoint&gt;) -&gt; ()"
+                  moduleName = "Gym App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/All/My%20Work%20/Gym%20App/Gym%20App/Home/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "397"
+                  endingLineNumber = "397"
+                  offsetFromSymbolStart = "8448">
+               </Location>
+               <Location
+                  uuid = "39313452-657C-4207-8235-CF160DB1F5DE - 1681464771b0f8eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 @Swift.MainActor () -&gt; () in Gym_App.MainViewController.countSquats(bodyParts: Swift.Dictionary&lt;__C.VNHumanBodyPoseObservationJointName, __C.VNRecognizedPoint&gt;) -&gt; ()"
+                  moduleName = "Gym App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/All/My%20Work%20/Gym%20App/Gym%20App/Home/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "397"
+                  endingLineNumber = "397"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "39313452-657C-4207-8235-CF160DB1F5DE - 323ef773f77e0e81"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 @Swift.MainActor () -&gt; () in Gym_App.MainViewController.countSquats(bodyParts: Swift.Dictionary&lt;__C.VNHumanBodyPoseObservationJointName, __C.VNRecognizedPoint&gt;) -&gt; ()"
+                  moduleName = "Gym App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/All/My%20Work%20/Gym%20App/Gym%20App/Home/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "400"
+                  endingLineNumber = "400"
+                  offsetFromSymbolStart = "264">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27704924-D704-4F7E-9058-B5369CE06431"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Gym App/Home/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "409"
+            endingLineNumber = "409"
+            landmarkName = "countSquats(bodyParts:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "27704924-D704-4F7E-9058-B5369CE06431 - 7006c3ed9c067211"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Gym_App.MainViewController.countSquats(bodyParts: Swift.Dictionary&lt;__C.VNHumanBodyPoseObservationJointName, __C.VNRecognizedPoint&gt;) -&gt; ()"
+                  moduleName = "Gym App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/All/My%20Work%20/Gym%20App/Gym%20App/Home/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "406"
+                  endingLineNumber = "406"
+                  offsetFromSymbolStart = "9040">
+               </Location>
+               <Location
+                  uuid = "27704924-D704-4F7E-9058-B5369CE06431 - 49d4641e76c7a3de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #5 @Swift.MainActor () -&gt; () in Gym_App.MainViewController.countSquats(bodyParts: Swift.Dictionary&lt;__C.VNHumanBodyPoseObservationJointName, __C.VNRecognizedPoint&gt;) -&gt; ()"
+                  moduleName = "Gym App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/All/My%20Work%20/Gym%20App/Gym%20App/Home/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "406"
+                  endingLineNumber = "406"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "27704924-D704-4F7E-9058-B5369CE06431 - 654215caf48cfd7a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #6 @Swift.MainActor () -&gt; () in Gym_App.MainViewController.countSquats(bodyParts: Swift.Dictionary&lt;__C.VNHumanBodyPoseObservationJointName, __C.VNRecognizedPoint&gt;) -&gt; ()"
+                  moduleName = "Gym App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/All/My%20Work%20/Gym%20App/Gym%20App/Home/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "409"
+                  endingLineNumber = "409"
+                  offsetFromSymbolStart = "264">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB70BED5-3503-4E01-AEB6-8D9D6B953C63"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Gym App/Home/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "394"
+            endingLineNumber = "394"
+            landmarkName = "countSquats(bodyParts:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
