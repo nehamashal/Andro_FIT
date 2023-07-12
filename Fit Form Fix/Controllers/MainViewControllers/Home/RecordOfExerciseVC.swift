@@ -27,7 +27,6 @@ class RecordOfExerciseVC: UIViewController {
             let changeValue = exerciseArr // Default values for exerciseArr
             print("changeValue \(changeValue)")
         }
-
         print("array: \(exerciseArr)")
         recordTV.delegate = self
         recordTV.dataSource = self
@@ -61,16 +60,25 @@ extension RecordOfExerciseVC: UITableViewDelegate, UITableViewDataSource {
         let cell = recordTV.dequeueReusableCell(withIdentifier: "RecordOfExerciseTVC", for: indexPath) as! RecordOfExerciseTVC
         let imgEX = model.listExercise[indexPath.row]
         let nameEX = model.nameExercise[indexPath.row]
-        let countEX = model.exerciseArr[indexPath.row]
+//        let countEX = model.exerciseArr[indexPath.row]
        
+        // Check if exerciseArr has enough elements for the current indexPath.row
+           if indexPath.row < model.exerciseArr.count {
+               let countEX = model.exerciseArr[indexPath.row]
+               cell.exCount.text = "\(countEX)"
+               
+               // Store the value in UserDefaults
+               let key = "ExerciseCount_\(indexPath.row)"
+               UserDefaults.standard.set(countEX, forKey: key)
+           } else {
+               // Default value when exerciseArr is empty or doesn't have enough elements
+               let countEX = 0
+               cell.exCount.text = "\(countEX)"
+           }
         
         cell.exImg.image = UIImage(named: imgEX)
         cell.exName.text = nameEX
-        cell.exCount.text = "\(countEX)"
         
-        // Store the value in UserDefaults
-        let key = "ExerciseCount_\(indexPath.row)"
-        UserDefaults.standard.set(countEX, forKey: key)
         
         return cell
     }

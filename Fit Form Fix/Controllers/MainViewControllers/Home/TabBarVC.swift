@@ -25,7 +25,7 @@ extension MainTabBarViewController: UITabBarControllerDelegate {
         } else if viewController is HistoryNavVC {
             
             print("History")
-        } else if viewController is SettingVC {
+        } else if viewController is SettingsNavVC {
             print("Settings")
         }else {
             print("Do Nothing...")

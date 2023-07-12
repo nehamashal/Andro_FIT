@@ -11,12 +11,14 @@ class SettingVC: UIViewController {
 
     @IBOutlet weak var logoutView:UIView!
     @IBOutlet weak var settingsTV: UITableView!
-    
+    @IBOutlet weak var nameLbl: UILabel!
     var settingsText = ["- Edit Profile", "- My Fitness Data", "- Workout Options", "- Invite a friend"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let name = UserDefaults.standard.string(forKey: "userName")
+        self.nameLbl.text = name
         logoutView.simpleWhiteShadow()
         self.settingsTV.delegate = self
         self.settingsTV.dataSource = self

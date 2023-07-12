@@ -510,7 +510,7 @@
         <!--History-->
         <scene sceneID="IHc-iS-hZz">
             <objects>
-                <navigationController navigationBarHidden="YES" id="hqP-ZY-neN" customClass="HistoryNavVC" customModule="Andro_Fit" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HistoryNavVC" navigationBarHidden="YES" id="hqP-ZY-neN" customClass="HistoryNavVC" customModule="Andro_Fit" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="History" image="clock.fill" catalog="system" id="lw0-ea-UTr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="49H-6D-CZK">
                         <autoresizingMask key="autoresizingMask"/>
@@ -812,7 +812,7 @@
         <!--Settings-->
         <scene sceneID="fvR-kK-P2b">
             <objects>
-                <navigationController navigationBarHidden="YES" id="gjK-Gt-mLX" customClass="SettingsNavVC" customModule="Andro_Fit" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SettingsNavVC" navigationBarHidden="YES" id="gjK-Gt-mLX" customClass="SettingsNavVC" customModule="Andro_Fit" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="gearshape.fill" catalog="system" id="aSi-OD-Rnw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="08j-Ce-iEj">
                         <autoresizingMask key="autoresizingMask"/>
@@ -1063,6 +1063,7 @@
                     <navigationItem key="navigationItem" id="eEs-Yn-Vm0"/>
                     <connections>
                         <outlet property="logoutView" destination="cZw-5t-Y60" id="L9g-Nz-Qu0"/>
+                        <outlet property="nameLbl" destination="7tB-Hq-kmL" id="ZWX-fb-spt"/>
                         <outlet property="settingsTV" destination="wDd-d7-8g8" id="bwS-fu-ulp"/>
                     </connections>
                 </viewController>
