@@ -1,0 +1,126 @@
+
+/* Class = "UILabel"; text = "Set the new password for your account so you can login and access all the features."; ObjectID = "2sW-Pf-4T0"; */
+"2sW-Pf-4T0.text" = "Set the new password for your account so you can login and access all the features.";
+
+/* Class = "UILabel"; text = "Remember Me"; ObjectID = "4Bf-Xe-csk"; */
+"4Bf-Xe-csk.text" = "Remember Me";
+
+/* Class = "UILabel"; text = "SIGN UP"; ObjectID = "4bX-Uj-aeT"; */
+"4bX-Uj-aeT.text" = "SIGN UP";
+
+/* Class = "UILabel"; text = "Hi"; ObjectID = "6eB-hZ-WPJ"; */
+"6eB-hZ-WPJ.text" = "Hi";
+
+/* Class = "UILabel"; text = "Welcome to FitFormFix"; ObjectID = "9jy-ry-ChN"; */
+"9jy-ry-ChN.text" = "Welcome to FitFormFix";
+
+/* Class = "UILabel"; text = "LOGIN"; ObjectID = "DQ0-xM-ek1"; */
+"DQ0-xM-ek1.text" = "LOGIN";
+
+/* Class = "UITextField"; placeholder = "Enter your Email"; ObjectID = "DT1-nY-k80"; */
+"DT1-nY-k80.placeholder" = "Enter your Email";
+
+/* Class = "UILabel"; text = "Begin your fitness transformation now"; ObjectID = "EE5-MQ-juG"; */
+"EE5-MQ-juG.text" = "Begin your fitness transformation now";
+
+/* Class = "UITextField"; placeholder = "Enter your new Password"; ObjectID = "EPo-uO-YI7"; */
+"EPo-uO-YI7.placeholder" = "Enter your new Password";
+
+/* Class = "UILabel"; text = "Terms and Conditions"; ObjectID = "F3a-zT-Ds4"; */
+"F3a-zT-Ds4.text" = "Terms and Conditions";
+
+/* Class = "UILabel"; text = "dhsjghj"; ObjectID = "I0X-8g-a62"; */
+"I0X-8g-a62.text" = "dhsjghj";
+
+/* Class = "UILabel"; text = "Don't have an account ? "; ObjectID = "Nvn-1v-4Ll"; */
+"Nvn-1v-4Ll.text" = "Don't have an account ? ";
+
+/* Class = "UILabel"; text = "User Name "; ObjectID = "RWi-4z-Qeh"; */
+"RWi-4z-Qeh.text" = "User Name ";
+
+/* Class = "UILabel"; text = "Let's get started!"; ObjectID = "TXb-OF-kK1"; */
+"TXb-OF-kK1.text" = "Let's get started!";
+
+/* Class = "UILabel"; text = "Sign Up"; ObjectID = "Tay-25-x5D"; */
+"Tay-25-x5D.text" = "Sign Up";
+
+/* Class = "UITextField"; placeholder = "Confirm your Password"; ObjectID = "UUq-Ug-6Vq"; */
+"UUq-Ug-6Vq.placeholder" = "Confirm your Password";
+
+/* Class = "UITextField"; placeholder = "Enter your Full Name"; ObjectID = "Uwm-PX-dxO"; */
+"Uwm-PX-dxO.placeholder" = "Enter your Full Name";
+
+/* Class = "UILabel"; text = "CONTINUE"; ObjectID = "Uyi-Fc-tGz"; */
+"Uyi-Fc-tGz.text" = "CONTINUE";
+
+/* Class = "UILabel"; text = "CONTINUE"; ObjectID = "WEE-JD-TcR"; */
+"WEE-JD-TcR.text" = "CONTINUE";
+
+/* Class = "UITextField"; placeholder = "Enter your Email"; ObjectID = "Xfn-OX-85C"; */
+"Xfn-OX-85C.placeholder" = "Enter your Email";
+
+/* Class = "UILabel"; text = "Forget Password ?"; ObjectID = "Ybf-fP-bWD"; */
+"Ybf-fP-bWD.text" = "Forget Password ?";
+
+/* Class = "UILabel"; text = "Reset Password"; ObjectID = "Yz2-0k-R89"; */
+"Yz2-0k-R89.text" = "Reset Password";
+
+/* Class = "UILabel"; text = "Forget Password ?"; ObjectID = "bTO-6f-F7I"; */
+"bTO-6f-F7I.text" = "Forget Password ?";
+
+/* Class = "UILabel"; text = "Other / I'd rather not say"; ObjectID = "clZ-sE-9bQ"; */
+"clZ-sE-9bQ.text" = "Other / I'd rather not say";
+
+/* Class = "UILabel"; text = "Select Your Gender"; ObjectID = "duc-fN-J2A"; */
+"duc-fN-J2A.text" = "Select Your Gender";
+
+/* Class = "UILabel"; text = "Please enter the email you used at the time of registration to get the password reset instruction."; ObjectID = "duh-Tc-gxY"; */
+"duh-Tc-gxY.text" = "Please enter the email you used at the time of registration to get the password reset instruction.";
+
+/* Class = "UILabel"; text = "Ready for work out ?"; ObjectID = "efW-sB-rBq"; */
+"efW-sB-rBq.text" = "Ready for work out ?";
+
+/* Class = "UILabel"; text = "Male"; ObjectID = "ev8-O0-68W"; */
+"ev8-O0-68W.text" = "Male";
+
+/* Class = "UILabel"; text = "Confirm you agree to the "; ObjectID = "ezj-mX-BSI"; */
+"ezj-mX-BSI.text" = "Confirm you agree to the ";
+
+/* Class = "UITextField"; placeholder = "Enter your Password"; ObjectID = "fGf-4g-tgt"; */
+"fGf-4g-tgt.placeholder" = "Enter your Password";
+
+/* Class = "UILabel"; text = "Female"; ObjectID = "l2a-dQ-x8K"; */
+"l2a-dQ-x8K.text" = "Female";
+
+/* Class = "UILabel"; text = "Confidence"; ObjectID = "lbn-mc-tcu"; */
+"lbn-mc-tcu.text" = "Confidence";
+
+/* Class = "UILabel"; text = "Start Exercise"; ObjectID = "luo-cG-M54"; */
+"luo-cG-M54.text" = "Start Exercise";
+
+/* Class = "UILabel"; text = " Your Personal Fitness Coach!"; ObjectID = "mnt-Fc-KBL"; */
+"mnt-Fc-KBL.text" = " Your Personal Fitness Coach!";
+
+/* Class = "UILabel"; text = "Knowing your gender can help us tailor the intensity for you based on different metabolic rates."; ObjectID = "n1N-K5-jlm"; */
+"n1N-K5-jlm.text" = "Knowing your gender can help us tailor the intensity for you based on different metabolic rates.";
+
+/* Class = "UILabel"; text = "Create Your Account "; ObjectID = "ohs-56-NHV"; */
+"ohs-56-NHV.text" = "Create Your Account ";
+
+/* Class = "UILabel"; text = "Already Have a Account ?"; ObjectID = "pbU-n6-v0V"; */
+"pbU-n6-v0V.text" = "Already Have a Account ?";
+
+/* Class = "UITextField"; placeholder = "Enter your Password"; ObjectID = "rSI-3u-QNh"; */
+"rSI-3u-QNh.placeholder" = "Enter your Password";
+
+/* Class = "UILabel"; text = "Welcome Back"; ObjectID = "sFr-0L-xQP"; */
+"sFr-0L-xQP.text" = "Welcome Back";
+
+/* Class = "UILabel"; text = "CONTINUE"; ObjectID = "ufT-jI-sa1"; */
+"ufT-jI-sa1.text" = "CONTINUE";
+
+/* Class = "UITextField"; placeholder = "Confirm your Password"; ObjectID = "ula-Ty-UKL"; */
+"ula-Ty-UKL.placeholder" = "Confirm your Password";
+
+/* Class = "UITextField"; placeholder = "Enter your Email"; ObjectID = "w3g-7L-qHv"; */
+"w3g-7L-qHv.placeholder" = "Enter your Email";
