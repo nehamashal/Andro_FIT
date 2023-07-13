@@ -81,8 +81,8 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMm-Tu-iiM">
-                                                        <rect key="frame" x="24" y="0.0" width="30" height="54"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMm-Tu-iiM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     </button>
                                                 </subviews>
@@ -94,7 +94,9 @@
                                                     <constraint firstAttribute="trailing" secondItem="7cy-0c-U0R" secondAttribute="trailing" constant="2" id="CDR-yF-cT5"/>
                                                     <constraint firstItem="7cy-0c-U0R" firstAttribute="top" secondItem="7uG-Ho-iMb" secondAttribute="top" constant="2" id="D2l-rw-xh0"/>
                                                     <constraint firstItem="7cy-0c-U0R" firstAttribute="leading" secondItem="7uG-Ho-iMb" secondAttribute="leading" constant="2" id="JWf-4e-YAa"/>
+                                                    <constraint firstItem="sMm-Tu-iiM" firstAttribute="leading" secondItem="7uG-Ho-iMb" secondAttribute="leading" id="OJs-HP-qWG"/>
                                                     <constraint firstAttribute="width" constant="54" id="d5d-OQ-3lD"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sMm-Tu-iiM" secondAttribute="trailing" id="qYV-Ch-a3x"/>
                                                     <constraint firstAttribute="bottom" secondItem="7cy-0c-U0R" secondAttribute="bottom" constant="2" id="qs3-VJ-7a7"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
@@ -801,6 +803,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="mOh-KK-Gu5"/>
                     <connections>
+                        <outlet property="backBtnView" destination="pqN-4e-TW8" id="GOP-Pr-4XX"/>
                         <outlet property="recordTV" destination="p9H-6T-KOf" id="UEw-5l-3fY"/>
                         <outlet property="restartBtnView" destination="wsO-x4-weQ" id="EBG-2c-Qmw"/>
                     </connections>
@@ -929,7 +932,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZw-5t-Y60">
                                         <rect key="frame" x="96.666666666666686" y="154" width="200" height="200"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" translatesAutoresizingMaskIntoConstraints="NO" id="JDK-Je-WIR">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JDK-Je-WIR">
                                                 <rect key="frame" x="2" y="2" width="196" height="196"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1065,6 +1068,7 @@
                         <outlet property="logoutView" destination="cZw-5t-Y60" id="L9g-Nz-Qu0"/>
                         <outlet property="nameLbl" destination="7tB-Hq-kmL" id="ZWX-fb-spt"/>
                         <outlet property="settingsTV" destination="wDd-d7-8g8" id="bwS-fu-ulp"/>
+                        <outlet property="userImg" destination="JDK-Je-WIR" id="ljl-xI-XNL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L0h-LC-n4N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

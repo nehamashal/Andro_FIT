@@ -77,7 +77,6 @@ extension RegisterVC{
         }else if passwordTF.text != confirmPwd.text {
                 self.view.makeToast("Password and Confirm Password donot match",position: .center)
         }else {
-            UserDefaults.standard.set("1", forKey: "isLoggedIn")
             UserDefaults.standard.set(self.fullNameTF.text, forKey: "userName")
             let vc = storyboard?.instantiateViewController(identifier: "SelectGenderVC") as! SelectGenderVC
             self.navigationController?.pushViewController(vc, animated: true)

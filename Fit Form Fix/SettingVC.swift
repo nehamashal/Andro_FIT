@@ -12,14 +12,14 @@ class SettingVC: UIViewController {
     @IBOutlet weak var logoutView:UIView!
     @IBOutlet weak var settingsTV: UITableView!
     @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var userImg: UIImageView!
+    
     var settingsText = ["- Edit Profile", "- My Fitness Data", "- Workout Options", "- Invite a friend"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let name = UserDefaults.standard.string(forKey: "userName")
-        self.nameLbl.text = name
-        logoutView.simpleWhiteShadow()
+        self.findNameAndGender()
         self.settingsTV.delegate = self
         self.settingsTV.dataSource = self
     }
@@ -47,6 +47,21 @@ extension SettingVC {
         let loginNavController = storyboard.instantiateViewController(identifier: "WelcomeNavVC")
         
         (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(loginNavController)
+    }
+    func findNameAndGender(){
+        let gender = UserDefaults.standard.string(forKey: "userGender") ?? "other"
+        let name = UserDefaults.standard.string(forKey: "userName")
+        self.nameLbl.text = name
+        
+        if gender == "male"{
+            self.userImg.image = UIImage(named: "male")
+        }else if gender == "female"{
+            self.userImg.image = UIImage(named: "female")
+        }else{
+            self.userImg.image = UIImage(named: "other")
+        }
+        
+        logoutView.simpleWhiteShadow()
     }
 }
 

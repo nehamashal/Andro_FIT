@@ -115,15 +115,17 @@ extension MainViewController {
 //            self.playbtntapped = false
 //        }
     }
-    override func viewWillAppear(_ animated: Bool) {
-          super.viewWillAppear(animated)
-        countStore()
-    }
     func countStore(){
+        let squat = UserDefaults.standard.string(forKey: "squat_Count")
+        let shoulderPress = UserDefaults.standard.string(forKey: "shoulderPressCount")
+        let pushUps = UserDefaults.standard.string(forKey: "pushUp_Count")
+        
+        let localdata = [squat,shoulderPress,pushUps]
+        print("localData \(localdata)")
         emptyArr = [squat_Count,pushUp_Count, shoulderPressCount,jump_Count]
         let totalCount = emptyArr.reduce(0, { $0 + $1 })
-        exerciseArr = [totalCount,squat_Count,pushUp_Count, shoulderPressCount,jump_Count]
-        
+        exerciseArr = [totalCount, squat_Count, pushUp_Count, shoulderPressCount, jump_Count]
+        UserDefaults.standard.set(exerciseArr, forKey: "Array")
     }
     @objc func didTapView(_ gesture: UITapGestureRecognizer) {
         print("did tap view", gesture)
@@ -138,7 +140,7 @@ extension MainViewController {
         }*/
     }
     func startTimer() {
-           var counter = 5
+//           var counter = 5
            
          /*  Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
                self.animationView.isHidden = false
@@ -172,6 +174,7 @@ extension MainViewController {
     }
     @IBAction func historyBtn(_ sender: UIButton){
         let vc = storyboard?.instantiateViewController(identifier: "RecordOfExerciseVC") as! RecordOfExerciseVC
+        vc.hideBackBtn = false
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func backButton(_ sender: UIButton){
@@ -243,7 +246,7 @@ extension MainViewController: VideoProcessingChainDelegate {
                 }else if self.index_Ex == 3 {
                     self.shoulderPress(bodyParts: self.bodyParts)
                 }else{
-                    self.all(bodyParts:self.bodyParts)
+                    self.ResetTheAllFucntion(bodyParts:self.bodyParts)
                 }
             
 //            }
@@ -453,85 +456,81 @@ extension MainViewController{
         let shoulder_AngleR = calculateAngle(bodyPart1: hipR, bodyPart2: shoulderR, bodyPart3: elbowR) ?? 0
         
         print("Angle hip: \(hip_AngleL) \(hip_AngleR)  knee: \(knee_AngleL) \(knee_AngleR) Elbow: \(elbow_AngleL) \(elbow_AngleR) Shoulder: \(shoulder_AngleL) \(shoulder_AngleR)")
-        DispatchQueue.main.async {
-            self.actionLabel.text = "Squat: \(self.squat_Count)"
-            if self.isSpeechCall_S == false {
-                self.convertTextToSpeech(text: "You are currently performing the squat exercise")
-                self.isSpeechCall_S = true
-                self.isSpeechCall_PU = false
-                self.isSpeechCall_SP = false
-            }
-       }
-        countStore()
         
-        if ((hip_AngleL > 160 || hip_AngleR > 160)
-            && (knee_AngleL > 160 || knee_AngleR > 160)) {
+        
+        
+        if ((hip_AngleL > 150 || hip_AngleR > 150)
+            && (knee_AngleL > 150 || knee_AngleR > 150)) {
             self.squat_Position = "up"
-        }else if (((hip_AngleL >= 80 && hip_AngleL <= 130)
-                   || (hip_AngleR >= 80 && hip_AngleR <= 130))
-                 && ((knee_AngleL >= 80 && knee_AngleL <= 130)
-                   || (knee_AngleR >= 80 && knee_AngleR <= 130))) {
+            DispatchQueue.main.async {
+                self.actionLabel.text = "Squats: \(self.squat_Count)"
+                if self.isSpeechCall_S == false {
+                    self.convertTextToSpeech(text: "You are currently performing the squat exercise")
+                    self.isSpeechCall_S = true
+                    self.isSpeechCall_PU = false
+                    self.isSpeechCall_SP = false
+                }
+           }
+        }else if (((hip_AngleL >= 100 && hip_AngleL <= 150)
+                   || (hip_AngleR >= 100 && hip_AngleR <= 150))
+                 && ((knee_AngleL >= 100 && knee_AngleL <= 150)
+                   || (knee_AngleR >= 100 && knee_AngleR <= 150))) {
             self.squat_Position = "middle"
-        }else if ((hip_AngleL < 80 || hip_AngleR < 80)
-                  && (knee_AngleL < 80 || knee_AngleR < 80)) {
+        }else if ((hip_AngleL < 100 || hip_AngleR < 100)
+                  && (knee_AngleL < 100 || knee_AngleR < 100)) {
             self.squat_Position = "down"
         }else {
             DispatchQueue.main.async {
-                self.textLbl.text = "Deep Down"
+                self.textLbl.text = "Please ensure proper posture and aim for a deeper squat position for maximum effectiveness."
             }
         }
        
         if self.squat_Position == "up" {
-            if ((elbow_AngleL >= 150 || elbow_AngleR >= 150) || (elbow_AngleL <= 30) || (elbow_AngleR <= 30)) {
-                DispatchQueue.main.async {
-                  self.textLbl.text = "POSITION UP... \(self.properCount_Sq)"
-                }
+            if ((elbow_AngleL >= 150 || elbow_AngleR >= 150) || (elbow_AngleL <= 40) || (elbow_AngleR <= 40)) {
+                
                 if squat_Count == 0 && properCount_Sq == ""{
                     DispatchQueue.main.async {
-                      self.textLbl.text = "Gesture Ready"
+                      self.textLbl.text = "Get ready for the first repetition of squats."
                     }
                 }else{
                     if properCount_Sq == "0" {
                          DispatchQueue.main.async {
-                            self.textLbl.text = "POSITION UP \(self.properCount_Sq)"
+                            self.textLbl.text = "Get ready for the next repetition of squats."
                          }
                          if ((shoulder_AngleL >= 80 && shoulder_AngleL <= 140) || (shoulder_AngleR >= 80 && shoulder_AngleR <= 140)){
                              properCount_Sq = "1"
                              squat_Count += 1
                              DispatchQueue.main.async {
-                                self.actionLabel.text = "Squats Count: \(self.squat_Count)"
+                                self.actionLabel.text = "Squats: \(self.squat_Count)"
                              }
+                             countStore()
+                             UserDefaults.standard.set(squat_Count, forKey: "squat_Count")
                          }else{
                              DispatchQueue.main.async {
-                                self.textLbl.text = "Wrong Shoulder Angle"
+                                self.textLbl.text = "Maintain the correct shoulder angle while performing squats."
                              }
                          }
                     }else{
-                       DispatchQueue.main.async{
-                           self.textLbl.text = "\(self.properCount_Sq)"
-                       }
+                       //up else
                     }
                 }
         }else{
            DispatchQueue.main.async {
-             self.textLbl.text = "Wrong Elbow Angle"
+             self.textLbl.text = "Please correct the angle of your elbows for proper squat execution."
            }
         }
       }else if self.squat_Position == "middle" {
                if properCount_Sq == "" {
                   properCount_Sq = "0"
-                  DispatchQueue.main.async {
-                    self.textLbl.text = "middle POSITION...\(self.properCount_Sq)"
-                  }
                }else {
                  DispatchQueue.main.async {
-                   self.textLbl.text = "not empty"
+                   self.textLbl.text = "Execute the squat exercise with proper form and technique"
                  }
             }
         }else {
             properCount_Sq = ""
             DispatchQueue.main.async {
-                self.textLbl.text = "Down POSITION...\(self.properCount_Sq)"
+                self.textLbl.text = "Get ready for the next repetition. You're doing great! \(self.properCount_Sq)"
             }
         }
     }
@@ -568,22 +567,23 @@ extension MainViewController{
         let knee_AngleL = calculateAngle(bodyPart1: hipL, bodyPart2: kneeL, bodyPart3: ankleL) ?? 0
         let knee_AngleR = calculateAngle(bodyPart1: hipR, bodyPart2: kneeR, bodyPart3: ankleR) ?? 0
         
-        print("elbow angle: \(elbow_AngleR) \(elbow_AngleL) shoulder: \(shoulder_AngleL) \(shoulder_AngleR) knee: \(knee_AngleL) \(knee_AngleR) ankle: \(angle_HEW_R) \(angle_HEW_L)")
-        countStore()
-        DispatchQueue.main.async {
-            self.actionLabel.text = "Push-Ups \(self.pushUp_Count)"
-            if self.isSpeechCall_PU == false {
-                self.convertTextToSpeech(text: "You are currently performing the push-up exercise")
-                self.isSpeechCall_PU = true
-                self.isSpeechCall_S = false
-                self.isSpeechCall_SP = false
-            }
-        }
+        print("elbow angle: \(elbow_AngleR) \(elbow_AngleL) shoulder: \(shoulder_AngleL) \(shoulder_AngleR) knee: \(knee_AngleL) \(knee_AngleR) ankle: \(angle_HEW_R) \(angle_HEW_L) hip: \(hip_AngleR) \(hip_AngleL)")
+      
+        
         if ((angle_HEW_L > 100 || angle_HEW_R > 100)
             && (knee_AngleL > 150 || knee_AngleR > 150)) {
             
             if (elbow_AngleR > 130) {
                 self.pushUp_Position = "Up"
+                DispatchQueue.main.async {
+                    self.actionLabel.text = "Push-Ups \(self.pushUp_Count)"
+                    if self.isSpeechCall_PU == false {
+                        self.convertTextToSpeech(text: "You are currently performing the push-up exercise")
+                        self.isSpeechCall_PU = true
+                        self.isSpeechCall_S = false
+                        self.isSpeechCall_SP = false
+                    }
+                }
             }else if (elbow_AngleR >= 100 && elbow_AngleR <= 130) {
                 self.pushUp_Position = "Middle"
             }else if (elbow_AngleR >= 30 && elbow_AngleR < 100) {
@@ -594,7 +594,7 @@ extension MainViewController{
             
         }else{
             DispatchQueue.main.async {
-                self.textLbl.text = "down ankleAngle_L position"
+                self.textLbl.text = "Please ensure correct alignment of your ankles and knees for proper push-up execution."
             }
         }
       
@@ -603,22 +603,24 @@ extension MainViewController{
             if ((shoulder_AngleL >= 50 && shoulder_AngleL <= 70)
                 || (shoulder_AngleR >= 50 && shoulder_AngleR <= 70)) {
                 
-                
+             
                 DispatchQueue.main.async {
-                    self.textLbl.text = " up shoulder position \(self.properCount_PU)"
+                    self.textLbl.text = "Maintain an upright position with your shoulders aligned. \(self.properCount_PU)"
                 }
                 if properCount_PU == "1"{
                     self.pushUp_Count += 1
                     DispatchQueue.main.async {
                         self.actionLabel.text = "Push-Ups: \(self.pushUp_Count)"
                     }
+                    countStore()
+                    UserDefaults.standard.set(pushUp_Count, forKey: "pushUp_Count")
                     properCount_PU = ""
                 }else{
                     properCount_PU = ""
                 }
             }else{
                 DispatchQueue.main.async {
-                    self.textLbl.text = "not upper shoulder position"
+                    self.textLbl.text = "Please maintain proper shoulder position for effective push-ups."
                 }
             }
             
@@ -626,18 +628,18 @@ extension MainViewController{
             if ((shoulder_AngleL >= 30 && shoulder_AngleL <= 40)
                 || (shoulder_AngleR >= 30 && shoulder_AngleR <= 40)) {
                 DispatchQueue.main.async {
-                    self.textLbl.text = "Middle shoulder position \(self.properCount_PU)"
+                    self.textLbl.text = "Maintain a stable position with your shoulders. \(self.properCount_PU)"
                 }
             }else{
                 DispatchQueue.main.async {
-                    self.textLbl.text = "not Middle shoulder position"
+                    self.textLbl.text = "Please maintain proper shoulder position for effective push-ups."
                 }
             }
             
         }else if self.pushUp_Position == "Down"{
             if (shoulder_AngleL < 40 || shoulder_AngleR < 40) {
                 DispatchQueue.main.async {
-                    self.textLbl.text = "Down shoulder position \(self.properCount_PU)"
+                    self.textLbl.text = "Keep your shoulders lower for effective push-ups. \(self.properCount_PU)"
                 }
                 if properCount_PU == ""{
                     properCount_PU = "1"
@@ -647,13 +649,13 @@ extension MainViewController{
             }else{
                 properCount_PU = "1"
                 DispatchQueue.main.async {
-                    self.textLbl.text = "not Down shoulder position"
+                    self.textLbl.text = "Get ready for the next repetition. You're doing great!"
                 }
             }
             
         }else{
             DispatchQueue.main.async {
-                self.textLbl.text = "Deep Down position"
+                self.textLbl.text = "Maintain a controlled downward position during push-ups."
             }
         }
     }
@@ -685,12 +687,12 @@ extension MainViewController{
       
         print("angle hip: \(hip_angleL) \(hip_angleR) shoulder: \(shoulder_angleL) \(shoulder_angleR) elbow:  \(elbow_angleL) \(elbow_angleR)")
         
-        countStore()
+        
         if (shoulder_angleL < 90 || shoulder_angleR < 90) {
             DispatchQueue.main.async {
                 self.actionLabel.text = "Shoulder Press: \(self.shoulderPressCount)"
                 if self.isSpeechCall_SP == false {
-                    self.convertTextToSpeech(text: "You are currently performing the Shoulder Press exercise")
+                    self.convertTextToSpeech(text: "You are currently performing the Shoulder Press exercise. Keep up the good work!")
                     self.isSpeechCall_SP = true
                     self.isSpeechCall_PU = false
                     self.isSpeechCall_S = false
@@ -712,7 +714,7 @@ extension MainViewController{
             if arm_Position == "up" {
                 
                 DispatchQueue.main.async {
-                    self.textLbl.text = "Arm's position Up \(self.properCount_SP)"
+                    self.textLbl.text = "Maintain proper form by keeping your arms aligned and lifting them overhead. \(self.properCount_SP)"
                 }
                 if (elbow_angleL > 120 && elbow_angleR > 120) {
                     if properCount_SP == "0" {
@@ -720,7 +722,7 @@ extension MainViewController{
                     }else {
                         if properCount_SP == "" {
                             DispatchQueue.main.async {
-                                self.textLbl.text = "Please ensure correct body form for the shoulder press exercise."
+                                self.textLbl.text = "Ensure correct body alignment and form for the shoulder press exercise."
                             }
                         }else{
                             //
@@ -728,14 +730,14 @@ extension MainViewController{
                     }
                 }else{
                     DispatchQueue.main.async {
-                        self.textLbl.text = "Please correct the angle of your elbows for the shoulder press"
+                        self.textLbl.text = "Please correct the angle of your elbows for proper execution of the shoulder press."
                     }
                 }
                 
             }else if arm_Position == "middle" {
                 
                 DispatchQueue.main.async {
-                    self.textLbl.text = "Arm's position Middle \(self.properCount_SP)"
+                    self.textLbl.text = "Maintain the proper arm position at shoulder height. \(self.properCount_SP)"
                 }
                 if properCount_SP == "" {
                     properCount_SP = "0"
@@ -748,10 +750,12 @@ extension MainViewController{
                             DispatchQueue.main.async {
                                 self.actionLabel.text = "Shoulder Press: \(self.shoulderPressCount)"
                             }
+                            countStore()
+                            UserDefaults.standard.set(shoulderPressCount, forKey: "shoulderPressCount")
                             properCount_SP = "2"
                         }else{
                             DispatchQueue.main.async {
-                                self.textLbl.text =  "Please correct the arms alignment according to the shoulder press"
+                                self.textLbl.text =  "Please correct the alignment of your arms for proper execution of the shoulder press."
                             }
                         }
                     }else{
@@ -762,17 +766,17 @@ extension MainViewController{
             }else if arm_Position == "down" {
                 properCount_SP = ""
                 DispatchQueue.main.async {
-                    self.textLbl.text = "Gesture ready.."
+                    self.textLbl.text = "Prepare yourself for the upcoming repetition as we dive into the shoulder press exercise."
                 }
                 
             }else {
                 DispatchQueue.main.async {
-                    self.textLbl.text = "Down"
+                    self.textLbl.text = "Please correct the alignment of your hips for proper execution of the shoulder press."
                 }
             }
         }else{
             DispatchQueue.main.async {
-                self.textLbl.text = "Please correct the hip alignment according to the shoulder press"
+                self.textLbl.text = "Please correct the alignment of your hips for proper execution of the shoulder press."
             }
         }
     }
@@ -797,7 +801,6 @@ extension MainViewController {
             return
         }
         
-        countStore()
         
         let hip_AngleR = calculateAngle(bodyPart1: shoulderR, bodyPart2: hipR, bodyPart3: kneeR) ?? 0
         let hip_AngleL = calculateAngle(bodyPart1: shoulderL, bodyPart2: hipL, bodyPart3: kneeL) ?? 0
@@ -841,7 +844,7 @@ extension MainViewController {
                 || (shoulder_AngleL >= 80 && shoulder_AngleL <= 140)
                 || (shoulder_AngleR >= 80 && shoulder_AngleR <= 140)
                 || (shoulder_AngleL < 80 || shoulder_AngleR < 80)) {
-                
+//Shoulder-Press
                 self.shoulderPress(bodyParts: self.bodyParts)
                 
               
@@ -880,5 +883,295 @@ extension MainViewController{
         let distanceToFloor = averageHipY - averageAnkleY
         
         return distanceToFloor
+    }
+}
+
+
+extension MainViewController {
+    func  ResetTheAllFucntion(bodyParts: [VNHumanBodyPoseObservation.JointName: VNRecognizedPoint]) {
+        guard let shoulderR = bodyParts[.rightShoulder]?.location,
+              let shoulderL = bodyParts[.leftShoulder]?.location,
+              let elbowR = bodyParts[.rightElbow]?.location,
+              let elbowL = bodyParts[.leftElbow]?.location,
+              let ankleL = bodyParts[.leftAnkle]?.location,
+              let ankleR = bodyParts[.rightAnkle]?.location,
+              let hipL = bodyParts[.leftHip]?.location,
+              let hipR = bodyParts[.rightHip]?.location,
+              let kneeL = bodyParts[.leftKnee]?.location,
+              let kneeR = bodyParts[.rightKnee]?.location,
+              let wristR = bodyParts[.rightWrist]?.location,
+              let wristL = bodyParts[.leftWrist]?.location else {
+            return
+        }
+        
+        
+        let hip_AngleR = calculateAngle(bodyPart1: shoulderR, bodyPart2: hipR, bodyPart3: kneeR) ?? 0
+        let hip_AngleL = calculateAngle(bodyPart1: shoulderL, bodyPart2: hipL, bodyPart3: kneeL) ?? 0
+        
+        let shoulder_AngleR = calculateAngle(bodyPart1: hipR, bodyPart2: shoulderR, bodyPart3: elbowR) ?? 0
+        let shoulder_AngleL = calculateAngle(bodyPart1: hipL, bodyPart2: shoulderL, bodyPart3: elbowL) ?? 0
+        
+        let elbow_AngleR = calculateAngle(bodyPart1: shoulderR, bodyPart2: elbowR, bodyPart3: wristR) ?? 0
+        let elbow_AngleL = calculateAngle(bodyPart1: shoulderL, bodyPart2: elbowL, bodyPart3: wristL) ?? 0
+        
+        let angle_HEW_R = calculateAngle(bodyPart1: hipR, bodyPart2: elbowR, bodyPart3: wristR) ?? 0
+        let angle_HEW_L = calculateAngle(bodyPart1: hipL, bodyPart2: elbowL, bodyPart3: wristL) ?? 0
+        
+        let knee_AngleR = calculateAngle(bodyPart1: hipR, bodyPart2: kneeR, bodyPart3: ankleR) ?? 0
+        let knee_AngleL = calculateAngle(bodyPart1: hipL, bodyPart2: kneeL, bodyPart3: ankleL) ?? 0
+        
+        print("Angles:- hip: \(hip_AngleR) \(hip_AngleL) shoulder: \(shoulder_AngleR) \(shoulder_AngleL) elbow: \(elbow_AngleR) \(elbow_AngleL) HEW: \(angle_HEW_R) \(angle_HEW_L) knee: \(knee_AngleR) \(knee_AngleL) ")
+        
+      /*
+                                    Squat                   push-ups            Shoulder press
+       Hip       : Down:-          80-110                   170-180                 90-110
+                   Middle:-        120-140                  160-180                 90-110
+                   Up:-            150-180                  160-180                 90-120
+       
+       Shoulder  : Down:-          110-130                  10-40                    70-90
+                   Middle:-        110-120                  20-50                   90-110
+                   Up:-            110-120                  50-60                   150-170
+       
+       Elbow     : Down:-          0-20                     60-90                   70-90
+                   Middle:-        10-20                    80-120                  80-110
+                   Up:-            20-30                    150-170                 130-140
+       
+       HEW       : Down:-          40-50                    120-180                 130-150
+                   Middle:-        50-60                    110-150                 130-150
+                   Up:-            50-70                    100-110                 140-150
+       
+       Knee      : Down:-          80-110                   170-180                 90-120
+                   Middle:-        110-130                  150-180                 90-120
+                   Up:-            170-180                  160-180                 90-120
+       
+       */
+        // Check the angles and call the appropriate functions
+     
+/// - Down
+        /*
+         down :  80-120 sq      110-130     0-50    0-90       80 -110
+                 160-180 pu     10-40       50-80   120-180     170-180
+                 90-120  sp     70-90       60-80   130-150     90-120
+         */
+         
+   
+         if (hip_AngleR > 160 || hip_AngleL > 160) {
+                if (shoulder_AngleR < 40 || shoulder_AngleL < 40) {
+                    if (elbow_AngleR >= 50 && elbow_AngleR <= 80) || (elbow_AngleL >= 50 && elbow_AngleL <= 80) {
+                            if (angle_HEW_R > 120 || angle_HEW_L > 120) {
+                                if (knee_AngleR >= 170 || knee_AngleL >= 170) {
+                                    /// push ups
+//                                    self.pushUps(bodyParts: self.bodyParts)
+                                    DispatchQueue.main.async {
+                                        self.textLbl.text = "Down - push ups"
+                                    }
+                                    return
+                                }else{
+                                    //knee
+                                }
+                            }else{
+                                //HEW
+                            }
+                    }else{
+                        //elbow
+                    }
+                }else{
+                    //shoulder
+                }
+         }else if (hip_AngleR <= 120) || (hip_AngleL <= 120) {
+                if (shoulder_AngleR >= 110 && shoulder_AngleR <=  130) || (shoulder_AngleL >= 110 && shoulder_AngleL <=  130) {
+                    if (elbow_AngleR < 50 || elbow_AngleL < 50) {
+                        if (angle_HEW_R < 90 || angle_HEW_L < 90) {
+                            if (knee_AngleR >= 80 && knee_AngleR <= 150) || (knee_AngleL >= 80 && knee_AngleL <= 150) {
+                                ///  squat
+                                  self.squats(bodyParts: self.bodyParts)
+                                return
+                            }else{
+                              //knee
+                            }
+                        }else{
+                            //HEW
+                        }
+                    }else{
+                        //elbow
+                    }
+                }else if (shoulder_AngleR >= 70 && shoulder_AngleR <= 90) || (shoulder_AngleL >= 70 && shoulder_AngleL <= 90) {
+                    if (elbow_AngleR >= 60 && elbow_AngleR <= 80) || (elbow_AngleL >= 60 && elbow_AngleL <= 80) {
+                         if (angle_HEW_R >= 130 || angle_HEW_L >= 130) {
+                             if (knee_AngleR >= 90 && knee_AngleR <= 120) || (knee_AngleL >= 90 && knee_AngleL <= 120) {
+                                    /// shoulder press
+                                  self.shoulderPress(bodyParts: self.bodyParts)
+                                 return
+                             }else{
+                                 //knne
+                             }
+                         }else{
+                             //HEW
+                         }
+                    }else{
+                        //elbiw
+                    }
+                }
+             else{
+                 //shoulder
+             }
+         }else if (hip_AngleR > 80 && hip_AngleR < 90) || (hip_AngleL > 80 && hip_AngleL < 90) {
+             if (shoulder_AngleR >= 110 && shoulder_AngleR <= 130) || (shoulder_AngleL >= 110 && shoulder_AngleL <= 130) {
+                 if (elbow_AngleR < 50 || elbow_AngleL < 50) {
+                     if (angle_HEW_R < 90 || angle_HEW_L < 90) {
+                         if (knee_AngleR >= 80 && knee_AngleR <= 150) || (knee_AngleL >= 80 && knee_AngleL <= 150) {
+                             ///  squat
+                                  self.squats(bodyParts: self.bodyParts)
+                             return
+                         }else{
+                             //knee
+                         }
+                     }else{
+                         //HEW
+                     }
+                 }else{
+                     //elbow
+                 }
+             }else{
+                 //shoulder
+             }
+         }else{
+             //Hip
+         }
+         
+  
+/// -  Middle
+        /*
+         middle:    120-150     110-130    0-50       0-90      110-160
+                    160-180     20-50      80-150     110-150    150-180
+                    90-120      90-150     80-130     130-150    90-120
+         */
+         if (hip_AngleR > 160 || hip_AngleL > 160) {
+            if (shoulder_AngleR >= 20 && shoulder_AngleR <= 50) || (shoulder_AngleL >= 20 && shoulder_AngleL <= 50) {
+                if (elbow_AngleR >= 80 && elbow_AngleR <= 150) || (elbow_AngleL >= 80 && elbow_AngleL <= 150) {
+                    if (angle_HEW_R >= 100 && angle_HEW_R <= 150) || (angle_HEW_L >= 100 && angle_HEW_L <= 150) {
+                        if (knee_AngleR >= 150 || knee_AngleL >= 150) {
+                            /// push ups
+                            DispatchQueue.main.async {
+                                self.textLbl.text = "Middle - Push ups"
+                            }
+                            return
+                        }else{
+                            //knee
+                        }
+                    }else{
+                        //HEW
+                    }
+                }else{
+                    //elbow
+                }
+            }else{
+                //shoulder
+            }
+         }else if (hip_AngleR >= 120 && hip_AngleR <= 150) || (hip_AngleL >= 120 && hip_AngleL <= 150) {
+             if (shoulder_AngleR >= 110 && shoulder_AngleR <= 130) || (shoulder_AngleL >= 110 && shoulder_AngleL <= 130) {
+                if (elbow_AngleR < 50 || elbow_AngleL < 50) {
+                    if (angle_HEW_R <= 90 || angle_HEW_L <= 90) {
+                        if (knee_AngleR >= 110 && knee_AngleR <= 160) || (knee_AngleL >= 110 && knee_AngleL <= 160) {
+                            ///  squat
+                            self.squats(bodyParts: self.bodyParts)
+                            return
+                        }else{
+                            //knee
+                        }
+                    }else{
+                        //HEW
+                    }
+                }else{
+                    //elbow
+                }
+             }else{
+                 //shoulder
+             }
+         }else if (hip_AngleR >= 90 && hip_AngleR <= 120) || (hip_AngleL >= 90 && hip_AngleL <= 120) {
+             if (shoulder_AngleR >= 90 && shoulder_AngleR <= 150) || (shoulder_AngleL >= 90 && shoulder_AngleL <= 150) {
+                if (elbow_AngleR >= 80 && elbow_AngleR < 130) || (elbow_AngleL >= 80 && elbow_AngleL < 130) {
+                    if (angle_HEW_R >= 130 || angle_HEW_L >= 130) {
+                        if (knee_AngleR >= 90 && knee_AngleR <= 120) || (knee_AngleL >= 90 && knee_AngleL <= 120) {
+                            ///  shoulder press
+                           self.shoulderPress(bodyParts: self.bodyParts)
+                            return
+                        }else{
+                            //knee
+                        }
+                    }else{
+                        //HEW
+                    }
+                }else{
+                    //elbow
+                }
+             }else{
+                 //shoulder
+             }
+         }else{
+             //Hip
+         }
+     
+        
+        
+ /// -  up
+        /*
+         up :
+                150-180     110-130      0-50       0-90       160-180
+                160-180     50-60       150-170     100-110      160-180
+                90-120      150-170     130-180     130-150       90-120
+         */
+         if (hip_AngleR > 160 || hip_AngleL > 160) {
+                if (shoulder_AngleR >= 110 && shoulder_AngleR <= 130) || (shoulder_AngleL >= 40 && shoulder_AngleL <= 130) {
+                    if (elbow_AngleR < 50 || elbow_AngleL < 50) {
+                        if (angle_HEW_R <= 90 || angle_HEW_L <= 90) {
+                            if (knee_AngleR > 160 || knee_AngleL > 160) {
+                                /// squat
+                                self.squats(bodyParts: self.bodyParts)
+                                return
+                            }
+                        }
+                    }
+                }else if (shoulder_AngleR >= 50 && shoulder_AngleR <= 60) || (shoulder_AngleL >= 50 && shoulder_AngleL <= 60) {
+                    if (elbow_AngleR > 150 || elbow_AngleL > 150) {
+                        if (angle_HEW_R >= 100 && angle_HEW_R <= 110) || (angle_HEW_L >= 100 && angle_HEW_L <= 110) {
+                            if (knee_AngleR > 160 || knee_AngleL > 160) {
+                                /// push-ups
+                                DispatchQueue.main.async {
+                                   self.textLbl.text = "Up - Push-ups"
+                                }
+                                return
+                            }
+                        }
+                    }
+                }
+         }else if (hip_AngleR >= 150 && hip_AngleR < 160) || (hip_AngleL >= 150 && hip_AngleL < 160) {
+                 if (shoulder_AngleR >= 40 && shoulder_AngleR <= 130) || (shoulder_AngleL >= 40 && shoulder_AngleL <= 130) {
+                     if (elbow_AngleR < 50 || elbow_AngleL < 50) {
+                         if (angle_HEW_R <= 90 || angle_HEW_L <= 90) {
+                             if (knee_AngleR > 160 || knee_AngleL > 160) {
+                                 /// squat
+                                 self.squats(bodyParts: self.bodyParts)
+                                 return
+                             }
+                         }
+                     }
+                 }
+         }else if (hip_AngleR >= 90 && hip_AngleR <= 120) || (hip_AngleL >= 90 && hip_AngleL <= 120) {
+                 if shoulder_AngleR >= 150 || shoulder_AngleL >= 150 {
+                    if (elbow_AngleR >= 130 || elbow_AngleL <= 130) {
+                        if (angle_HEW_R >= 130 || angle_HEW_L >= 130) {
+                             if (knee_AngleR >= 90 && knee_AngleR <= 120) || (knee_AngleL >= 90 && knee_AngleL <= 120) {
+                                ///  shoulder press
+                                 self.shoulderPress(bodyParts: self.bodyParts)
+                                 return
+                             }
+                        }
+                    }
+                 }
+         }
+         
+         
+        
     }
 }

@@ -11,29 +11,32 @@ class RecordOfExerciseVC: UIViewController {
     
     @IBOutlet weak var recordTV: UITableView!
     @IBOutlet weak var restartBtnView: UIView!
+    @IBOutlet weak var backBtnView: UIView!
 
+    var hideBackBtn = true
+    
     var model = ExerciseModel(listExercise: listExcercise, nameExercise: nameExcercise, exerciseArr: exerciseArr,count: 5)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        // Retrieve the stored array from UserDefaults, if available
-        if let storedArray = UserDefaults.standard.array(forKey: "ExerciseArray") as? [Int] {
-            exerciseArr = storedArray
-            print("changeValue \(storedArray)")
-        } else {
-            let exerciseArr = Array(repeating: 0, count: 5)
-            let changeValue = exerciseArr // Default values for exerciseArr
-            print("changeValue \(changeValue)")
-        }
+      
         print("array: \(exerciseArr)")
+        
         recordTV.delegate = self
         recordTV.dataSource = self
         
         restartBtnView.layer.borderWidth = 1
         restartBtnView.layer.borderColor = UIColor.white.cgColor
         restartBtnView.simpleWhiteShadow()
+        if hideBackBtn {
+            self.backBtnView.isHidden = true
+        }else{
+            self.backBtnView.isHidden = false
+        }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        recordTV.reloadData() // Reload the table view to display the updated counts
     }
 }
 
@@ -45,7 +48,10 @@ extension RecordOfExerciseVC {
     
     @IBAction func resetBtn(_ sender: UIButton) {
         exerciseArr = [Int](repeating: 0, count: exerciseArr.count)
-        UserDefaults.standard.removeObject(forKey: "ExerciseArray")
+        UserDefaults.standard.removeObject(forKey: "Array")
+        UserDefaults.standard.removeObject(forKey: "squat_Count")
+        UserDefaults.standard.removeObject(forKey: "shoulderPressCount")
+        UserDefaults.standard.removeObject(forKey: "pushUp_Count")
         recordTV.reloadData()
     }
 }
@@ -56,32 +62,52 @@ extension RecordOfExerciseVC: UITableViewDelegate, UITableViewDataSource {
         return model.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  /*  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = recordTV.dequeueReusableCell(withIdentifier: "RecordOfExerciseTVC", for: indexPath) as! RecordOfExerciseTVC
         let imgEX = model.listExercise[indexPath.row]
         let nameEX = model.nameExercise[indexPath.row]
-//        let countEX = model.exerciseArr[indexPath.row]
-       
+        
+        var countEX = 0 // Declare a local variable to store the exercise count
+        
         // Check if exerciseArr has enough elements for the current indexPath.row
-           if indexPath.row < model.exerciseArr.count {
-               let countEX = model.exerciseArr[indexPath.row]
-               cell.exCount.text = "\(countEX)"
-               
-               // Store the value in UserDefaults
-               let key = "ExerciseCount_\(indexPath.row)"
-               UserDefaults.standard.set(countEX, forKey: key)
-           } else {
-               // Default value when exerciseArr is empty or doesn't have enough elements
-               let countEX = 0
-               cell.exCount.text = "\(countEX)"
-           }
+        if indexPath.row < model.exerciseArr.count {
+            countEX = model.exerciseArr[indexPath.row]
+        }
+        
+        // Display the value in the cell
+        cell.exCount.text = "\(countEX)"
+        
+        // Store the value in UserDefaults
+        let key = "ExerciseCount_\(indexPath.row)"
+        UserDefaults.standard.set(countEX, forKey: key)
         
         cell.exImg.image = UIImage(named: imgEX)
         cell.exName.text = nameEX
         
-        
+        return cell
+    }*/
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = recordTV.dequeueReusableCell(withIdentifier: "RecordOfExerciseTVC", for: indexPath) as! RecordOfExerciseTVC
+        let imgEX = model.listExercise[indexPath.row]
+        let nameEX = model.nameExercise[indexPath.row]
+
+        if let storedArray = UserDefaults.standard.array(forKey: "Array") as? [Int] {
+            if indexPath.row < storedArray.count {
+                cell.exCount.text = "\(storedArray[indexPath.row])"
+            } else {
+                cell.exCount.text = "0"
+            }
+        } else {
+            cell.exCount.text = "0"
+        }
+
+        cell.exImg.image = UIImage(named: imgEX)
+        cell.exName.text = nameEX
+
         return cell
     }
+
+
 }
 
 // MARK: TableViewCell

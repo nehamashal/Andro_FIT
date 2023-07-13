@@ -37,8 +37,6 @@ extension WorkOut_ListVC{
 extension WorkOut_ListVC {
     func findGender(){
         let gender = UserDefaults.standard.string(forKey: "userGender") ?? "other"
-       
-        
         if gender == "male"{
             self.userImg.image = UIImage(named: "male")
         }else if gender == "female"{
