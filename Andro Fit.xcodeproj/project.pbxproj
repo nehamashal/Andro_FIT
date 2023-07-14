@@ -57,6 +57,8 @@
 		58C1D6AC2A580EC200E8FC1C /* HistoryNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C1D6AB2A580EC200E8FC1C /* HistoryNavVC.swift */; };
 		58C1D6B02A5813CD00E8FC1C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58C1D6AF2A5813CD00E8FC1C /* Home.storyboard */; };
 		58C1D6B62A58150700E8FC1C /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C1D6B52A58150700E8FC1C /* Storyboard.swift */; };
+		58C53AEA2A61790800B3D671 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C53AE92A61790800B3D671 /* EditProfileVC.swift */; };
+		58C53AEE2A617E2A00B3D671 /* ImageInFullScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C53AED2A617E2A00B3D671 /* ImageInFullScreenVC.swift */; };
 		58CC27DD2A56A41900070DBF /* RecordOfExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CC27DC2A56A41900070DBF /* RecordOfExerciseVC.swift */; };
 		C6D980062A4470D400150ECC /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D980052A4470D400150ECC /* ExtensionUIView.swift */; };
 		C6D9800A2A44752700150ECC /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D980092A44752700150ECC /* Toast.swift */; };
@@ -142,6 +144,8 @@
 		58C1D6AB2A580EC200E8FC1C /* HistoryNavVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryNavVC.swift; sourceTree = "<group>"; };
 		58C1D6AF2A5813CD00E8FC1C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		58C1D6B52A58150700E8FC1C /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		58C53AE92A61790800B3D671 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		58C53AED2A617E2A00B3D671 /* ImageInFullScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInFullScreenVC.swift; sourceTree = "<group>"; };
 		58CC27DC2A56A41900070DBF /* RecordOfExerciseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordOfExerciseVC.swift; sourceTree = "<group>"; };
 		707162133B854F9F9B482610 /* Pods_Fit_Form_Fix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fit_Form_Fix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		801C280172125BAE1C08FD2D /* Pods_Fit_Form_Fix_Fit_Form_FixUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fit_Form_Fix_Fit_Form_FixUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -328,6 +332,7 @@
 		58B0E1C42A42B85D0094211E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				58C53AE62A6178BD00B3D671 /* Settings */,
 				58C1D6A62A580E4500E8FC1C /* Navigation TabBar */,
 				58C1D6A42A580D9700E8FC1C /* TabBarVC.swift */,
 				58B0E1C62A42B85D0094211E /* WorkOut_ListVC.swift */,
@@ -383,6 +388,15 @@
 				58B0E1B52A42B85C0094211E /* PoseModel */,
 			);
 			path = Defualt;
+			sourceTree = "<group>";
+		};
+		58C53AE62A6178BD00B3D671 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				58C53AE92A61790800B3D671 /* EditProfileVC.swift */,
+				58C53AED2A617E2A00B3D671 /* ImageInFullScreenVC.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		D819A438F345177297DBAF93 /* Frameworks */ = {
@@ -648,6 +662,7 @@
 				5815244D2A457321006AC3E9 /* LogInVC.swift in Sources */,
 				581524512A457735006AC3E9 /* ResetPasswordVC.swift in Sources */,
 				58B0E1CE2A42B85D0094211E /* GradientClass.swift in Sources */,
+				58C53AEA2A61790800B3D671 /* EditProfileVC.swift in Sources */,
 				58B0E1C72A42B85D0094211E /* ExerciseClassifier+FrameRate.swift in Sources */,
 				58C1D6B62A58150700E8FC1C /* Storyboard.swift in Sources */,
 				58B0E1CB2A42B85D0094211E /* ExerciseClassifier+PredictAction.swift in Sources */,
@@ -666,6 +681,7 @@
 				C6D980062A4470D400150ECC /* ExtensionUIView.swift in Sources */,
 				58B0E1D22A42B85D0094211E /* Pose+Connection.swift in Sources */,
 				C6D9800A2A44752700150ECC /* Toast.swift in Sources */,
+				58C53AEE2A617E2A00B3D671 /* ImageInFullScreenVC.swift in Sources */,
 				58C1D6A32A580AA100E8FC1C /* SettingVC.swift in Sources */,
 				58B0E1CC2A42B85D0094211E /* ExerciseClassifier+Singleton.swift in Sources */,
 				58B0E1DB2A42B85D0094211E /* MainViewController.swift in Sources */,

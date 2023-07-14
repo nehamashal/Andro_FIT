@@ -78,7 +78,7 @@ class ImagePickerManager: NSObject, UIImagePickerControllerDelegate, UINavigatio
     //}
     
     // For Swift 4.2+
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    /*func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true, completion: nil)
         
         guard let image = info[.originalImage] as? UIImage else {
@@ -92,8 +92,7 @@ class ImagePickerManager: NSObject, UIImagePickerControllerDelegate, UINavigatio
             let imagePath = imageURL.path
             print("Image path: \(imagePath)")
             
-            
-            
+        
             pickImageCallback?(image)
 //            UserDefaults.standard.set(fileURL, forKey: "imagePath")
             // Store the image path locally using UserDefaults
@@ -103,7 +102,26 @@ class ImagePickerManager: NSObject, UIImagePickerControllerDelegate, UINavigatio
             
         }
         
+    }*/
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        
+        guard let image = info[.originalImage] as? UIImage else {
+            fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+        }
+        
+        // Convert the image to data
+        guard let imageData = image.pngData() else {
+            fatalError("Failed to convert image to data.")
+        }
+        
+        // Store the image data in UserDefaults
+        UserDefaults.standard.set(imageData, forKey: "profileimg")
+        
+        // Update the user's profile image
+        pickImageCallback?(image)
     }
+
     @objc func imagePickerController(_ picker: UIImagePickerController, pickedImage: UIImage?) {
     }
 

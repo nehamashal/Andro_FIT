@@ -22,11 +22,11 @@ class SettingVC: UIViewController {
         self.findNameAndGender()
         self.settingsTV.delegate = self
         self.settingsTV.dataSource = self
+        let categoryIcon = UserDefaults.standard.data(forKey: "profileimg") ?? Data()
+        userImg.image = UIImage(data: categoryIcon )
     }
     
-    @IBAction func backBtn(_ sender: UIButton){
-        self.navigationController?.popViewController(animated: true)
-    }
+    
 
 }
 extension SettingVC{
@@ -35,7 +35,16 @@ extension SettingVC{
         UserDefaults.standard.removeObject(forKey: "userGender")
         UserDefaults.standard.removeObject(forKey: "imagePath")
         UserDefaults.standard.removeObject(forKey: "isLoggedIn")
+        UserDefaults.standard.removeObject(forKey: "Array")
+        UserDefaults.standard.removeObject(forKey: "squat_Count")
+        UserDefaults.standard.removeObject(forKey: "shoulderPressCount")
+        UserDefaults.standard.removeObject(forKey: "pushUp_Count")
+        UserDefaults.standard.removeObject(forKey: "profileimg")
         changeIntialController()
+    }
+    @IBAction func showImg(_ sender:UIButton){
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ImageInFullScreenVC") as! ImageInFullScreenVC
+        self.navigationController?.present(vc, animated: true)
     }
 }
 //MARK: Functions

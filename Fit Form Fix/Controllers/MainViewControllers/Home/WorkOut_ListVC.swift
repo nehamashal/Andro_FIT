@@ -20,10 +20,13 @@ class WorkOut_ListVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         let userName = UserDefaults.standard.string(forKey: "userName") ?? "User Name"
-        findGender()
+        let categoryIcon = UserDefaults.standard.data(forKey: "profileimg") ?? Data()
+        userImg.image = UIImage(data: categoryIcon )
+        //findGender()
         listCollection.delegate = self
         listCollection.dataSource = self
-        self.nameLbl.text = "Hello, \(userName)"
+        self.nameLbl.text = "Welcome, \(userName)"
+        print("profileimg \(categoryIcon)")
     }
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.tabBarController?.tabBar.isHidden = false
