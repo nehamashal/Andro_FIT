@@ -39,8 +39,8 @@ class LogInVC: UIViewController {
         let underlineAttributedString = NSAttributedString(string: "SIGN UP", attributes: underlineAttribute)
         lblUnderLine.attributedText = underlineAttributedString
         
-        self.emailTF.text = "abc@yopmail.com"
-        self.passwordTF.text = "123456"
+//        self.emailTF.text = "abc@yopmail.com"
+//        self.passwordTF.text = "123456"
     }
 
 }

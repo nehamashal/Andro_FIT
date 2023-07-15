@@ -69,6 +69,7 @@ class MainViewController: UIViewController,UIGestureRecognizerDelegate {
     var isSpeechCall_SP = false
     
     let speechSynthesizer = AVSpeechSynthesizer()
+    
 }
 
 // MARK: - View Controller Events
@@ -1135,4 +1136,7 @@ extension MainViewController {
     }
 }
 
-
+//MARK: Face Landmark
+extension MainViewController {
+    
+}

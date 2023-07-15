@@ -1206,7 +1206,7 @@
                                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                                 </button>
                                                                             </subviews>
-                                                                            <color key="backgroundColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <color key="backgroundColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="bottom" secondItem="Ofd-VT-Mua" secondAttribute="bottom" id="RRX-yc-IcE"/>
                                                                                 <constraint firstAttribute="trailing" secondItem="Ofd-VT-Mua" secondAttribute="trailing" id="i1r-jj-LQV"/>
@@ -1379,7 +1379,7 @@
     </scenes>
     <resources>
         <image name="Edit" width="279" height="280"/>
-        <image name="Man" width="498" height="501"/>
+        <image name="Man" width="446" height="560"/>
         <image name="Splash.png" width="375" height="375"/>
         <image name="back" width="390" height="256"/>
         <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>

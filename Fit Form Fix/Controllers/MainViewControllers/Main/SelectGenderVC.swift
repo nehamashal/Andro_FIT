@@ -8,7 +8,8 @@
 import UIKit
 
 var orangetheme = UIColor(hexString: "#FFA260")
-var grayBG = UIColor(hexString: "#C7C7CC")
+var liteOrange = UIColor(hexString: "#f2c0a2")
+var grayBG = UIColor(hexString: "#8E8E93")
 
 class SelectGenderVC: UIViewController {
 
@@ -77,10 +78,10 @@ extension SelectGenderVC: UICollectionViewDelegate, UICollectionViewDataSource {
         
         if let selectedCell = genderImgCV.cellForItem(at: indexPath) as? genderImgCVC {
             if index == 0 {
-                selectedCell.mainView.backgroundColor = .blue
+                selectedCell.mainView.backgroundColor = liteOrange
                 gender = "male"
             } else if index == 1 {
-                selectedCell.mainView.backgroundColor = .systemPink
+                selectedCell.mainView.backgroundColor = liteOrange
                 gender = "female"
             }
         }

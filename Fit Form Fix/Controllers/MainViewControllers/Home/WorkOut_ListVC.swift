@@ -27,6 +27,7 @@ class WorkOut_ListVC: UIViewController{
         listCollection.dataSource = self
         self.nameLbl.text = "Welcome, \(userName)"
         print("profileimg \(categoryIcon)")
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.tabBarController?.tabBar.isHidden = false

@@ -83,13 +83,25 @@ extension SettingVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = settingsTV.dequeueReusableCell(withIdentifier: "SettingTVC", for: indexPath) as! SettingTVC
         cell.settingsName.text = settingsText[indexPath.row]
+        cell.indexBtn.tag = indexPath.row
+        cell.indexBtn.addTarget(self, action: #selector(settingIndex), for: .touchUpInside)
         return cell
+    }
+    @objc func settingIndex(_ sender:UIButton){
+        let index = sender.tag
+        print("index \(index)")
+        if index == 0 {
+            let vc = storyboard?.instantiateViewController(identifier: "EditProfileVC") as! EditProfileVC
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 
 // MARK: TableViewCell
 class SettingTVC: UITableViewCell {
     @IBOutlet weak var settingsName:UILabel!
+    @IBOutlet weak var indexBtn:UIButton!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

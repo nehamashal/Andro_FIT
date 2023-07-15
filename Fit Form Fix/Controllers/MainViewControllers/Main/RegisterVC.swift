@@ -49,10 +49,10 @@ class RegisterVC: UIViewController {
         setRightViewIcon(icon: UIImage(named: "1")!, txtField: confirmPwd)
         setRightViewIcon(icon: UIImage(named: "1")!, txtField: passwordTF)
         
-        self.fullNameTF.text = "ABC"
-        self.emailTF.text = "abc@yopmail.com"
-        self.passwordTF.text = "123456"
-        self.confirmPwd.text = "123456"
+//        self.fullNameTF.text = "ABC"
+//        self.emailTF.text = "abc@yopmail.com"
+//        self.passwordTF.text = "123456"
+//        self.confirmPwd.text = "123456"
     }
     
      
@@ -154,3 +154,5 @@ extension RegisterVC{
     
     
 }
+
+

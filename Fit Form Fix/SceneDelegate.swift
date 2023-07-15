@@ -20,15 +20,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let isLoggedIn = UserDefaults.standard.string(forKey: "isLoggedIn") ?? "0"
         
-        
-        
         if isLoggedIn == "1"{
-            
             let storyboard : UIStoryboard = StoryboardConstant.home
             self.window?.rootViewController = storyboard.instantiateInitialViewController()
-            
         }else{
-            
             let storyboard : UIStoryboard = StoryboardConstant.main
             self.window?.rootViewController = storyboard.instantiateInitialViewController()
        
