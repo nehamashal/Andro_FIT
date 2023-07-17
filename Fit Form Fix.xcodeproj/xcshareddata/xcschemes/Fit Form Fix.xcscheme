@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "58B0E1772A42B74F0094211E"
-               BuildableName = "Andro Fit.app"
-               BlueprintName = "Andro Fit"
-               ReferencedContainer = "container:Andro Fit.xcodeproj">
+               BuildableName = "Fit Form Fix.app"
+               BlueprintName = "Fit Form Fix"
+               ReferencedContainer = "container:Fit Form Fix.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,9 +35,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "58B0E18D2A42B7500094211E"
-               BuildableName = "Andro FitTests.xctest"
-               BlueprintName = "Andro FitTests"
-               ReferencedContainer = "container:Andro Fit.xcodeproj">
+               BuildableName = "Fit Form FixTests.xctest"
+               BlueprintName = "Fit Form FixTests"
+               ReferencedContainer = "container:Fit Form Fix.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,9 +46,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "58B0E1972A42B7500094211E"
-               BuildableName = "Andro FitUITests.xctest"
-               BlueprintName = "Andro FitUITests"
-               ReferencedContainer = "container:Andro Fit.xcodeproj">
+               BuildableName = "Fit Form FixUITests.xctest"
+               BlueprintName = "Fit Form FixUITests"
+               ReferencedContainer = "container:Fit Form Fix.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -68,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "58B0E1772A42B74F0094211E"
-            BuildableName = "Andro Fit.app"
-            BlueprintName = "Andro Fit"
-            ReferencedContainer = "container:Andro Fit.xcodeproj">
+            BuildableName = "Fit Form Fix.app"
+            BlueprintName = "Fit Form Fix"
+            ReferencedContainer = "container:Fit Form Fix.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "58B0E1772A42B74F0094211E"
-            BuildableName = "Andro Fit.app"
-            BlueprintName = "Andro Fit"
-            ReferencedContainer = "container:Andro Fit.xcodeproj">
+            BuildableName = "Fit Form Fix.app"
+            BlueprintName = "Fit Form Fix"
+            ReferencedContainer = "container:Fit Form Fix.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

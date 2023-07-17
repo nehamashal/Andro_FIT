@@ -7,7 +7,7 @@
 
 import UIKit
 
-var orangetheme = UIColor(hexString: "#FFA260")
+var orangetheme = UIColor(hexString: "#4e2cde")
 var liteOrange = UIColor(hexString: "#f2c0a2")
 var grayBG = UIColor(hexString: "#8E8E93")
 

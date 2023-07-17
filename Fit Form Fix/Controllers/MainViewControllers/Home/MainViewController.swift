@@ -493,7 +493,7 @@ extension MainViewController {
         /*
          down :  80-130 sq      110-130     0-50    0-90       110 -140
                  160-180 pu     0-30       0-100    100-180     160-180
-                 90-120  sp     70-90       60-80   130-180     90-120
+                 80-130  sp     70-90       60-80   130-180     80-140
          */
          
    
@@ -534,10 +534,10 @@ extension MainViewController {
                     }else{
                         //elbow
                     }
-                }else if (shoulder_AngleR >= 70 && shoulder_AngleR <= 90) || (shoulder_AngleL >= 70 && shoulder_AngleL <= 90) {
-                    if (elbow_AngleR >= 60 && elbow_AngleR <= 80) || (elbow_AngleL >= 60 && elbow_AngleL <= 80) {
-                         if (angle_HEW_R >= 130 || angle_HEW_L >= 130) {
-                             if (knee_AngleR >= 90 && knee_AngleR <= 120) || (knee_AngleL >= 90 && knee_AngleL <= 120) {
+                }else if (shoulder_AngleR >= 50 && shoulder_AngleR <= 90) || (shoulder_AngleL >= 50 && shoulder_AngleL <= 90) {
+                    if (elbow_AngleR >= 30 && elbow_AngleR <= 50) || (elbow_AngleL >= 30 && elbow_AngleL <= 50) {
+                         if (angle_HEW_R >= 100 || angle_HEW_L >= 100) {
+                             if (knee_AngleR >= 60 && knee_AngleR <= 160) || (knee_AngleL >= 60 && knee_AngleL <= 160) {
                                     /// shoulder press
                                   self.shoulderPress_Exercise(bodyParts: self.bodyParts)
                                  return
@@ -563,7 +563,7 @@ extension MainViewController {
         /*
          middle:    130-160     110-130    0-50       0-90      140-160
                     160-180     30-50      100-140     100-130    160-180
-                    90-120      90-150     80-130     130-180    90-120
+                    80-140      90-150     80-130     130-180    80-140
          */
          if (hip_AngleR > 160 || hip_AngleL > 160) {
             if (shoulder_AngleR >= 30 && shoulder_AngleR <= 50) || (shoulder_AngleL >= 30 && shoulder_AngleL <= 50) {
@@ -605,11 +605,11 @@ extension MainViewController {
              }else{
                  //shoulder
              }
-         }else if (hip_AngleR >= 90 && hip_AngleR <= 120) || (hip_AngleL >= 90 && hip_AngleL <= 120) {
-             if (shoulder_AngleR >= 90 && shoulder_AngleR <= 150) || (shoulder_AngleL >= 90 && shoulder_AngleL <= 150) {
-                if (elbow_AngleR >= 80 && elbow_AngleR < 130) || (elbow_AngleL >= 80 && elbow_AngleL < 130) {
-                    if (angle_HEW_R >= 130 || angle_HEW_L >= 130) {
-                        if (knee_AngleR >= 90 && knee_AngleR <= 120) || (knee_AngleL >= 90 && knee_AngleL <= 120) {
+         }else if (hip_AngleR >= 60 && hip_AngleR <= 160) || (hip_AngleL >= 60 && hip_AngleL <= 160) {
+             if (shoulder_AngleR >= 90 && shoulder_AngleR <= 140) || (shoulder_AngleL >= 90 && shoulder_AngleL <= 140) {
+                if (elbow_AngleR >= 50 && elbow_AngleR < 100) || (elbow_AngleL >= 50 && elbow_AngleL < 100) {
+                    if (angle_HEW_R >= 100 || angle_HEW_L >= 100) {
+                        if (knee_AngleR >= 60 && knee_AngleR <= 160) || (knee_AngleL >= 60 && knee_AngleL <= 160) {
                             ///  shoulder press
                            self.shoulderPress_Exercise(bodyParts: self.bodyParts)
                             return
@@ -636,11 +636,11 @@ extension MainViewController {
          up :
                 160-180     110-130      0-50       0-90       160-180
                 160-180     50-80       140-180     100-130      160-180
-                90-120      150-180     130-180     130-180       90-120
+                80-140      150-180     130-180     130-180       80-140
          */
          if (hip_AngleR > 160 || hip_AngleL > 160) {
                 if (shoulder_AngleR >= 110 && shoulder_AngleR <= 130) || (shoulder_AngleL >= 110 && shoulder_AngleL <= 130) {
-                    if (elbow_AngleR < 50 || elbow_AngleL < 50) {
+                    if (elbow_AngleR <= 50 || elbow_AngleL <= 50) {
                         if (angle_HEW_R <= 90 || angle_HEW_L <= 90) {
                             if (knee_AngleR > 160 || knee_AngleL > 160) {
                                 /// squat
@@ -677,11 +677,11 @@ extension MainViewController {
                 }else{
                     //shoulder
                 }
-         }else if (hip_AngleR >= 90 && hip_AngleR <= 120) || (hip_AngleL >= 90 && hip_AngleL <= 120) {
-                 if shoulder_AngleR >= 150 || shoulder_AngleL >= 150 {
-                    if (elbow_AngleR >= 130 || elbow_AngleL <= 130) {
-                        if (angle_HEW_R >= 130 || angle_HEW_L >= 130) {
-                             if (knee_AngleR >= 90 && knee_AngleR <= 120) || (knee_AngleL >= 90 && knee_AngleL <= 120) {
+         }else if (hip_AngleR >= 60 && hip_AngleR <= 160) || (hip_AngleL >= 60 && hip_AngleL <= 160) {
+                 if shoulder_AngleR >= 140 || shoulder_AngleL >= 140 {
+                    if (elbow_AngleR >= 100 || elbow_AngleL <= 100) {
+                        if (angle_HEW_R >= 100 || angle_HEW_L >= 100) {
+                             if (knee_AngleR >= 60 && knee_AngleR <= 160) || (knee_AngleL >= 60 && knee_AngleL <= 160) {
                                 ///  shoulder press
                                  self.shoulderPress_Exercise(bodyParts: self.bodyParts)
                                  return
@@ -1033,16 +1033,16 @@ extension MainViewController {
         print("Angles:- hip: \(hip_AngleR) \(hip_AngleL) shoulder: \(shoulder_AngleR) \(shoulder_AngleL) elbow: \(elbow_AngleR) \(elbow_AngleL) HEW: \(angle_HEW_R) \(angle_HEW_L) knee: \(knee_AngleR) \(knee_AngleL) ")
         
         
-        //   up:      90-120      150-180     130-180    130-180     90-120
-        //   middle:  90-120      90-150      80-130     130-180     90-120
-        //   down:    90-120      70-90       60-80      130-180     90-120
+        //   up:      80-140      150-180     130-180    130-180     80-140
+        //   middle:  80-140      90-150      80-130     130-180     80-140
+        //   down:    80-140      70-90       60-80      130-180     80-140
         
         
-        if (hip_AngleR >= 90 && hip_AngleR <= 120) || (hip_AngleL >= 90 && hip_AngleL <= 120) {
-            if shoulder_AngleR >= 150 || shoulder_AngleL >= 150 {
-                if (elbow_AngleR >= 130 || elbow_AngleL <= 130) {
-                    if (angle_HEW_R >= 130 || angle_HEW_L >= 130) {
-                        if (knee_AngleR >= 90 && knee_AngleR <= 120) || (knee_AngleL >= 90 && knee_AngleL <= 120) {
+        if (hip_AngleR >= 60 && hip_AngleR <= 160) || (hip_AngleL >= 60 && hip_AngleL <= 160) {
+            if shoulder_AngleR >= 140 || shoulder_AngleL >= 140 {
+                if (elbow_AngleR >= 100 || elbow_AngleL <= 100) {
+                    if (angle_HEW_R >= 100 || angle_HEW_L >= 100) {
+                        if (knee_AngleR >= 60 && knee_AngleR <= 160) || (knee_AngleL >= 60 && knee_AngleL <= 160) {
  //  user's arms in an upper position
                             if self.shoulderPressCount == 0 {
                                 DispatchQueue.main.async {
@@ -1055,17 +1055,26 @@ extension MainViewController {
                             return
                         }else{
                             //knee
+                            DispatchQueue.main.async {
+                                self.textLbl.text = "Wrong Knee Angle!"
+                            }
                         }
                     }else{
                         //HEW
+                        DispatchQueue.main.async {
+                            self.textLbl.text = "Wrong HEW Angle!"
+                        }
                     }
                 }else{
                     //elbow
+                    DispatchQueue.main.async {
+                        self.textLbl.text = "Wrong elbow Angle!"
+                    }
                 }
-        }else if (shoulder_AngleR >= 90 && shoulder_AngleR <= 150) || (shoulder_AngleL >= 90 && shoulder_AngleL <= 150) {
-            if (elbow_AngleR >= 80 && elbow_AngleR < 130) || (elbow_AngleL >= 80 && elbow_AngleL < 130) {
-                if (angle_HEW_R >= 130 || angle_HEW_L >= 130) {
-                    if (knee_AngleR >= 90 && knee_AngleR <= 120) || (knee_AngleL >= 90 && knee_AngleL <= 120) {
+        }else if (shoulder_AngleR >= 90 && shoulder_AngleR <= 140) || (shoulder_AngleL >= 90 && shoulder_AngleL <= 140) {
+            if (elbow_AngleR >= 50 && elbow_AngleR < 100) || (elbow_AngleL >= 50 && elbow_AngleL < 100) {
+                if (angle_HEW_R >= 100 || angle_HEW_L >= 100) {
+                    if (knee_AngleR >= 60 && knee_AngleR <= 160) || (knee_AngleL >= 60 && knee_AngleL <= 160) {
  //  user's arms in a middle of shoulder-press position
                         if properCount_SP == "0" {
                             properCount_SP = "1"
@@ -1083,10 +1092,10 @@ extension MainViewController {
             }else{
                 //elbow
             }
-        }else if (shoulder_AngleR >= 70 && shoulder_AngleR <= 90) || (shoulder_AngleL >= 70 && shoulder_AngleL <= 90) {
-            if (elbow_AngleR >= 60 && elbow_AngleR <= 80) || (elbow_AngleL >= 60 && elbow_AngleL <= 80) {
-                if (angle_HEW_R >= 130 || angle_HEW_L >= 130) {
-                    if (knee_AngleR >= 90 && knee_AngleR <= 120) || (knee_AngleL >= 90 && knee_AngleL <= 120) {
+        }else if (shoulder_AngleR >= 50 && shoulder_AngleR <= 90) || (shoulder_AngleL >= 50 && shoulder_AngleL <= 90) {
+            if (elbow_AngleR >= 30 && elbow_AngleR < 50) || (elbow_AngleL >= 30 && elbow_AngleL < 50) {
+                if (angle_HEW_R >= 100 || angle_HEW_L >= 100) {
+                    if (knee_AngleR >= 60 && knee_AngleR <= 160) || (knee_AngleL >= 60 && knee_AngleL <= 160) {
 //  user's arms in down position
                         DispatchQueue.main.async {
                             self.actionLabel.text = "Shoulder Press: \(self.shoulderPressCount)"
@@ -1118,19 +1127,34 @@ extension MainViewController {
                         }
                         return
                     }else{
-                        //knne
+                        //knee
+                        DispatchQueue.main.async {
+                            self.textLbl.text = "Wrong Knee Angle!"
+                        }
                     }
                 }else{
                     //HEW
+                    DispatchQueue.main.async {
+                        self.textLbl.text = "Wrong HEW Angle!"
+                    }
                 }
             }else{
-                //elbiw
+                //elbow
+                DispatchQueue.main.async {
+                    self.textLbl.text = "Wrong elbow Angle!"
+                }
             }
         }else{
             //shoulder
+            DispatchQueue.main.async {
+                self.textLbl.text = "Wrong elbow Angle!"
+            }
         }
     }else{
         //Hip
+        DispatchQueue.main.async {
+            self.textLbl.text = "Wrong Hip Angle!"
+        }
     }
     
     }

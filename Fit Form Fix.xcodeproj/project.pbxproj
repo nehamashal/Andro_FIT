@@ -49,6 +49,7 @@
 		58B0E1DC2A42B85D0094211E /* WorkOut_ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B0E1C62A42B85D0094211E /* WorkOut_ListVC.swift */; };
 		58B0E1E42A42BFB40094211E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B0E1E32A42BFB40094211E /* Assets.xcassets */; };
 		58B14E132A58250100788AF9 /* WelcomeNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B14E122A58250100788AF9 /* WelcomeNavVC.swift */; };
+		58B53B682A652516007EB1E9 /* FaceDetectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B53B672A652516007EB1E9 /* FaceDetectionVC.swift */; };
 		58BC85C22A627BB900E8B1D2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 58BC85C12A627BB900E8B1D2 /* FirebaseAnalytics */; };
 		58BC85C42A627BB900E8B1D2 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 58BC85C32A627BB900E8B1D2 /* FirebaseAnalyticsOnDeviceConversion */; };
 		58BC85C62A627BB900E8B1D2 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 58BC85C52A627BB900E8B1D2 /* FirebaseAnalyticsSwift */; };
@@ -130,16 +131,16 @@
 		589E34162A52B35F002B6EA5 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		58AFED542A45B0C20022B4B3 /* SelectGenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenderVC.swift; sourceTree = "<group>"; };
 		58AFED562A45D9900022B4B3 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		58B0E1782A42B74F0094211E /* Andro Fit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Andro Fit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58B0E1782A42B74F0094211E /* Fit Form Fix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fit Form Fix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B0E17B2A42B74F0094211E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58B0E17D2A42B74F0094211E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		58B0E17F2A42B74F0094211E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58B0E1822A42B74F0094211E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58B0E1872A42B7500094211E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58B0E1892A42B7500094211E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58B0E18E2A42B7500094211E /* Andro FitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Andro FitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58B0E18E2A42B7500094211E /* Fit Form FixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fit Form FixTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B0E1922A42B7500094211E /* Fit_Form_FixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fit_Form_FixTests.swift; sourceTree = "<group>"; };
-		58B0E1982A42B7500094211E /* Andro FitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Andro FitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58B0E1982A42B7500094211E /* Fit Form FixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fit Form FixUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B0E19C2A42B7500094211E /* Fit_Form_FixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fit_Form_FixUITests.swift; sourceTree = "<group>"; };
 		58B0E19E2A42B7500094211E /* Fit_Form_FixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fit_Form_FixUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		58B0E1AC2A42B85C0094211E /* ExerciseClassifier+FrameRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+FrameRate.swift"; sourceTree = "<group>"; };
@@ -166,6 +167,7 @@
 		58B0E1C62A42B85D0094211E /* WorkOut_ListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkOut_ListVC.swift; sourceTree = "<group>"; };
 		58B0E1E32A42BFB40094211E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58B14E122A58250100788AF9 /* WelcomeNavVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeNavVC.swift; sourceTree = "<group>"; };
+		58B53B672A652516007EB1E9 /* FaceDetectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionVC.swift; sourceTree = "<group>"; };
 		58BC85FB2A62A6F500E8B1D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		58BC85FE2A62CA6E00E8B1D2 /* FaceLandmarksDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceLandmarksDetector.swift; sourceTree = "<group>"; };
 		58BC85FF2A62CA6E00E8B1D2 /* UIImage+Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Scale.swift"; sourceTree = "<group>"; };
@@ -280,9 +282,9 @@
 		58B0E1792A42B74F0094211E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				58B0E1782A42B74F0094211E /* Andro Fit.app */,
-				58B0E18E2A42B7500094211E /* Andro FitTests.xctest */,
-				58B0E1982A42B7500094211E /* Andro FitUITests.xctest */,
+				58B0E1782A42B74F0094211E /* Fit Form Fix.app */,
+				58B0E18E2A42B7500094211E /* Fit Form FixTests.xctest */,
+				58B0E1982A42B7500094211E /* Fit Form FixUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -443,6 +445,7 @@
 		58C1D6B32A58147C00E8FC1C /* MainViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				58B53B672A652516007EB1E9 /* FaceDetectionVC.swift */,
 				58C1D6B42A5814D200E8FC1C /* Defualt */,
 				58B0E1C12A42B85D0094211E /* Main */,
 				58B0E1C42A42B85D0094211E /* Home */,
@@ -483,9 +486,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B0E1772A42B74F0094211E /* Andro Fit */ = {
+		58B0E1772A42B74F0094211E /* Fit Form Fix */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B0E1A22A42B7500094211E /* Build configuration list for PBXNativeTarget "Andro Fit" */;
+			buildConfigurationList = 58B0E1A22A42B7500094211E /* Build configuration list for PBXNativeTarget "Fit Form Fix" */;
 			buildPhases = (
 				B34CB06AB219A2268AD8815B /* [CP] Check Pods Manifest.lock */,
 				58B0E1742A42B74F0094211E /* Sources */,
@@ -497,7 +500,7 @@
 			);
 			dependencies = (
 			);
-			name = "Andro Fit";
+			name = "Fit Form Fix";
 			packageProductDependencies = (
 				58BC85C12A627BB900E8B1D2 /* FirebaseAnalytics */,
 				58BC85C32A627BB900E8B1D2 /* FirebaseAnalyticsOnDeviceConversion */,
@@ -528,12 +531,12 @@
 				58BC85F52A627BB900E8B1D2 /* FirebaseStorageCombine-Community */,
 			);
 			productName = "Fit Form Fix";
-			productReference = 58B0E1782A42B74F0094211E /* Andro Fit.app */;
+			productReference = 58B0E1782A42B74F0094211E /* Fit Form Fix.app */;
 			productType = "com.apple.product-type.application";
 		};
-		58B0E18D2A42B7500094211E /* Andro FitTests */ = {
+		58B0E18D2A42B7500094211E /* Fit Form FixTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B0E1A52A42B7500094211E /* Build configuration list for PBXNativeTarget "Andro FitTests" */;
+			buildConfigurationList = 58B0E1A52A42B7500094211E /* Build configuration list for PBXNativeTarget "Fit Form FixTests" */;
 			buildPhases = (
 				6C41D7602328F7DA3283CA0E /* [CP] Check Pods Manifest.lock */,
 				58B0E18A2A42B7500094211E /* Sources */,
@@ -545,14 +548,14 @@
 			dependencies = (
 				58B0E1902A42B7500094211E /* PBXTargetDependency */,
 			);
-			name = "Andro FitTests";
+			name = "Fit Form FixTests";
 			productName = "Fit Form FixTests";
-			productReference = 58B0E18E2A42B7500094211E /* Andro FitTests.xctest */;
+			productReference = 58B0E18E2A42B7500094211E /* Fit Form FixTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		58B0E1972A42B7500094211E /* Andro FitUITests */ = {
+		58B0E1972A42B7500094211E /* Fit Form FixUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B0E1A82A42B7500094211E /* Build configuration list for PBXNativeTarget "Andro FitUITests" */;
+			buildConfigurationList = 58B0E1A82A42B7500094211E /* Build configuration list for PBXNativeTarget "Fit Form FixUITests" */;
 			buildPhases = (
 				1EEF988630815DAD58880424 /* [CP] Check Pods Manifest.lock */,
 				58B0E1942A42B7500094211E /* Sources */,
@@ -565,9 +568,9 @@
 			dependencies = (
 				58B0E19A2A42B7500094211E /* PBXTargetDependency */,
 			);
-			name = "Andro FitUITests";
+			name = "Fit Form FixUITests";
 			productName = "Fit Form FixUITests";
-			productReference = 58B0E1982A42B7500094211E /* Andro FitUITests.xctest */;
+			productReference = 58B0E1982A42B7500094211E /* Fit Form FixUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -593,7 +596,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58B0E1732A42B74F0094211E /* Build configuration list for PBXProject "Andro Fit" */;
+			buildConfigurationList = 58B0E1732A42B74F0094211E /* Build configuration list for PBXProject "Fit Form Fix" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -610,9 +613,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58B0E1772A42B74F0094211E /* Andro Fit */,
-				58B0E18D2A42B7500094211E /* Andro FitTests */,
-				58B0E1972A42B7500094211E /* Andro FitUITests */,
+				58B0E1772A42B74F0094211E /* Fit Form Fix */,
+				58B0E18D2A42B7500094211E /* Fit Form FixTests */,
+				58B0E1972A42B7500094211E /* Fit Form FixUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -779,6 +782,7 @@
 				589E34042A52A4F4002B6EA5 /* String.swift in Sources */,
 				58B0E1CF2A42B85D0094211E /* Pose+Landmark.swift in Sources */,
 				589E34172A52B35F002B6EA5 /* ImagePickerManager.swift in Sources */,
+				58B53B682A652516007EB1E9 /* FaceDetectionVC.swift in Sources */,
 				58B0E1C92A42B85D0094211E /* ActionPrediction.swift in Sources */,
 				58B0E17E2A42B74F0094211E /* SceneDelegate.swift in Sources */,
 				58B0E1D02A42B85D0094211E /* Pose.swift in Sources */,
@@ -828,12 +832,12 @@
 /* Begin PBXTargetDependency section */
 		58B0E1902A42B7500094211E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 58B0E1772A42B74F0094211E /* Andro Fit */;
+			target = 58B0E1772A42B74F0094211E /* Fit Form Fix */;
 			targetProxy = 58B0E18F2A42B7500094211E /* PBXContainerItemProxy */;
 		};
 		58B0E19A2A42B7500094211E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 58B0E1772A42B74F0094211E /* Andro Fit */;
+			target = 58B0E1772A42B74F0094211E /* Fit Form Fix */;
 			targetProxy = 58B0E1992A42B7500094211E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -997,6 +1001,7 @@
 				DEVELOPMENT_TEAM = WEAE2S6CZ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Fit Form Fix/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Fit Form Fix";
 				INFOPLIST_KEY_NSCameraUsageDescription = "To capture your body measurements, please grant access to your device's camera.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app requires access to the photo library.";
@@ -1034,6 +1039,7 @@
 				DEVELOPMENT_TEAM = WEAE2S6CZ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Fit Form Fix/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Fit Form Fix";
 				INFOPLIST_KEY_NSCameraUsageDescription = "To capture your body measurements, please grant access to your device's camera.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app requires access to the photo library.";
@@ -1076,7 +1082,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Andro Fit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Andro Fit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fit Form Fix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fit Form Fix";
 			};
 			name = Debug;
 		};
@@ -1097,7 +1103,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Andro Fit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Andro Fit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fit Form Fix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fit Form Fix";
 			};
 			name = Release;
 		};
@@ -1142,7 +1148,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B0E1732A42B74F0094211E /* Build configuration list for PBXProject "Andro Fit" */ = {
+		58B0E1732A42B74F0094211E /* Build configuration list for PBXProject "Fit Form Fix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B0E1A02A42B7500094211E /* Debug */,
@@ -1151,7 +1157,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B0E1A22A42B7500094211E /* Build configuration list for PBXNativeTarget "Andro Fit" */ = {
+		58B0E1A22A42B7500094211E /* Build configuration list for PBXNativeTarget "Fit Form Fix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B0E1A32A42B7500094211E /* Debug */,
@@ -1160,7 +1166,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B0E1A52A42B7500094211E /* Build configuration list for PBXNativeTarget "Andro FitTests" */ = {
+		58B0E1A52A42B7500094211E /* Build configuration list for PBXNativeTarget "Fit Form FixTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B0E1A62A42B7500094211E /* Debug */,
@@ -1169,7 +1175,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B0E1A82A42B7500094211E /* Build configuration list for PBXNativeTarget "Andro FitUITests" */ = {
+		58B0E1A82A42B7500094211E /* Build configuration list for PBXNativeTarget "Fit Form FixUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B0E1A92A42B7500094211E /* Debug */,
