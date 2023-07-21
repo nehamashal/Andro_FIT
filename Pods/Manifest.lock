@@ -1,16 +1,28 @@
 PODS:
+  - FaceSDK (5.2.1569):
+    - RegulaCommon (= 6.8.324)
   - IQKeyboardManagerSwift (6.5.11)
+  - RegulaCommon (6.8.324)
+  - SideMenu (6.5.0)
 
 DEPENDENCIES:
+  - FaceSDK
   - IQKeyboardManagerSwift
+  - SideMenu
 
 SPEC REPOS:
   trunk:
+    - FaceSDK
     - IQKeyboardManagerSwift
+    - RegulaCommon
+    - SideMenu
 
 SPEC CHECKSUMS:
+  FaceSDK: 87bfe1694e80ec848559d68ec48225f08eceb398
   IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  RegulaCommon: 23bcd2c9448da7946b67ea1408a9b710576376ac
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
 
-PODFILE CHECKSUM: 7fe5a0262b6ea5912496acc5274b5451a01ab34d
+PODFILE CHECKSUM: 71a53016ad0f901f58972cfb586ec561ac459a31
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.11.2

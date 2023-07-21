@@ -1,0 +1,6 @@
+framework module Pods_Andro_Fit_AppTests {
+  umbrella header "Pods-Andro Fit AppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
