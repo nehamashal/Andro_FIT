@@ -8,7 +8,6 @@
 import UIKit
 import IQKeyboardManagerSwift
 
-//import Firebase
 
 
 var window: UIWindow?
@@ -21,25 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-//        FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
-                
-        let isLoggedIn = UserDefaults.standard.string(forKey: "isLoggedIn") ?? "0"
-        if isLoggedIn == "1"{
-            //HomeNavVC
-            let storyboard : UIStoryboard = StoryboardConstant.home
-            let mainTabBarController = storyboard.instantiateViewController(identifier: "HomeMainNAV")
-                   window?.rootViewController = mainTabBarController
-            (UIApplication.shared.delegate as? AppDelegate)?.changeRootViewController(mainTabBarController)
-        }else{
-            //WelcomeNavVC
-            let storyboard : UIStoryboard = StoryboardConstant.main
-            let loginNavController = storyboard.instantiateViewController(identifier: "WelcomeNavVC")
-                    window?.rootViewController = loginNavController
-        }
-   
         return true
     }
 

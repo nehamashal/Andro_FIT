@@ -7,16 +7,623 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C3B6E9E6-6F2B-45E4-98F9-42AE83C42435"
+            uuid = "57666CCA-3A12-469D-9A06-BDAB01AC44F8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "57666CCA-3A12-469D-9A06-BDAB01AC44F8 - 4ca80ee1f169210a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.viewDidLoad() -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "436">
+               </Location>
+               <Location
+                  uuid = "57666CCA-3A12-469D-9A06-BDAB01AC44F8 - 4ca80ee1f169212b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.viewDidLoad() -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "328">
+               </Location>
+               <Location
+                  uuid = "57666CCA-3A12-469D-9A06-BDAB01AC44F8 - 4ca80ee1f169212b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.viewDidLoad() -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "248">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E7473FC6-2454-49F5-B420-F3D017101720"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13D5242B-AE94-452D-88E9-A9E64A86F328"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "createImageForPosition(firstImage:secoundImg:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "13D5242B-AE94-452D-88E9-A9E64A86F328 - 36a65295b5bd589c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.createImageForPosition(firstImage: Swift.Optional&lt;__C.UIImage&gt;, secoundImg: Swift.Optional&lt;__C.UIImage&gt;, completion: (Swift.Optional&lt;__C.RFSMatchFacesImage&gt;, Swift.Optional&lt;__C.RFSMatchFacesImage&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "199"
+                  endingLineNumber = "199"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "13D5242B-AE94-452D-88E9-A9E64A86F328 - 36a65295b5bd587d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.createImageForPosition(firstImage: Swift.Optional&lt;__C.UIImage&gt;, secoundImg: Swift.Optional&lt;__C.UIImage&gt;, completion: (Swift.Optional&lt;__C.RFSMatchFacesImage&gt;, Swift.Optional&lt;__C.RFSMatchFacesImage&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "198"
+                  endingLineNumber = "198"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9EF4A261-9FC7-47E8-88A9-15E4E29FE922"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9EF4A261-9FC7-47E8-88A9-15E4E29FE922 - fd50fd3deb472dcf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "9EF4A261-9FC7-47E8-88A9-15E4E29FE922 - fd50fd3deb472c2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "228">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F235878-DBD0-42DE-933D-64AA95E607F8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0F235878-DBD0-42DE-933D-64AA95E607F8 - fd50fd3deb472da8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "424">
+               </Location>
+               <Location
+                  uuid = "0F235878-DBD0-42DE-933D-64AA95E607F8 - fd50fd3deb472d89"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "424">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "839DD59A-C047-4130-8EFA-7753F4BED2D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "839DD59A-C047-4130-8EFA-7753F4BED2D4 - fd50fd3deb472d4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "472">
+               </Location>
+               <Location
+                  uuid = "839DD59A-C047-4130-8EFA-7753F4BED2D4 - fd50fd3deb472d35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "584">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5F77D67B-A193-46FF-B116-AD35904B69B3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5F77D67B-A193-46FF-B116-AD35904B69B3 - fd50fd3deb472ed4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "584">
+               </Location>
+               <Location
+                  uuid = "5F77D67B-A193-46FF-B116-AD35904B69B3 - fd50fd3deb472d35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "584">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74A98874-3821-4FF9-A639-239607C9A1D9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "74A98874-3821-4FF9-A639-239607C9A1D9 - fd50fd3deb472e96"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "1788">
+               </Location>
+               <Location
+                  uuid = "74A98874-3821-4FF9-A639-239607C9A1D9 - fd50fd3deb472ef7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "1788">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F281D829-06F2-46CB-B315-2AD8CEF5F758"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F281D829-06F2-46CB-B315-2AD8CEF5F758 - fd50fd3deb472f7b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "1736">
+               </Location>
+               <Location
+                  uuid = "F281D829-06F2-46CB-B315-2AD8CEF5F758 - fd50fd3deb472f7b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Andro_Fit_App.ScanFaceVC.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Andro Fit App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajnibajaj/Desktop/Andro%20Fit%20App%202/Andro%20Fit%20App/Controllers/MainViewControllers/New%20VC/ScanFaceVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "1752">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "035A757E-370D-48D9-AEE4-E8AE54D3E852"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC348A9E-CEBE-490B-B79F-2D165B03A62F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "actionNewface(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "43A08562-A393-43B6-AC1D-57E56615A1B6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "53B2B00E-35E9-4DA1-9B9D-8FD5273169DF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F75D4295-F5B4-4D9D-B15C-3AC6184E20C8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "viewWillDisappear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5DCFDDA-D151-49EC-945A-8060FB709AE2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "setupLivePreview()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A7FF3418-6633-497D-B24E-8B41EBC51A13"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "photoOutput(_:didFinishProcessingPhoto:error:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A95D3133-890B-4001-8FFF-D96A3421ABE6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "matchFace()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "491B0105-8524-40FD-881C-DF62D76BFADE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "activityIndicator(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4BBD9BD-BDFB-42AD-B17D-F0BA62973AAF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
             landmarkName = "captureOutput(_:didOutput:from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CA3501AD-133D-4E90-AA2C-54902D4064C3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
+            landmarkName = "detectFace(in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19A4BEDD-4AF6-4FD4-B034-55C617E21014"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "249"
+            endingLineNumber = "249"
+            landmarkName = "configureDevice()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E804255F-2193-467B-A912-A53E8D0B9414"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Andro Fit App/Controllers/MainViewControllers/New VC/ScanFaceVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "278"
+            endingLineNumber = "278"
+            landmarkName = "getDevice()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

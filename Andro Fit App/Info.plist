@@ -2,16 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSCameraUsageDescription</key>
-	<string>app</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.</string>
-	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>You can view a text transcription of your meeting in the app.</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>This app requires access to the photo library.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app requires access to the photo library.</string>
+	<string>App wants to play a sound </string>
+	<key>AWS</key>
+	<dict>
+		<key>CredentialsProvider</key>
+		<dict>
+			<key>CognitoIdentity</key>
+			<dict>
+				<key>Default</key>
+				<dict>
+					<key>PoolId</key>
+					<string>us-east-1:902e94a9-a4a1-45a1-8c20-d5be189ae0af</string>
+					<key>Region</key>
+					<string>USEast1</string>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Inter Regular 400.otf</string>
@@ -36,22 +44,6 @@
 					<string>Main</string>
 				</dict>
 			</array>
-		</dict>
-	</dict>
-	<key>AWS</key>
-	<dict>
-		<key>CredentialsProvider</key>
-		<dict>
-			<key>CognitoIdentity</key>
-			<dict>
-				<key>Default</key>
-				<dict>
-					<key>PoolId</key>
-					<string>us-east-1:902e94a9-a4a1-45a1-8c20-d5be189ae0af</string>
-					<key>Region</key>
-					<string>USEast1</string>
-				</dict>
-			</dict>
 		</dict>
 	</dict>
 </dict>

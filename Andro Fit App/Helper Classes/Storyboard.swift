@@ -11,5 +11,4 @@ import UIKit
 
 struct StoryboardConstant {
     static let main: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-    static let home: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
 }

@@ -14,18 +14,18 @@ extension PoseS {
         static let width: CGFloat = 12.0
 
         /// The gradient colors the connection uses to draw its line.
-        /*static let colors = [UIColor.white.cgColor,
-                             UIColor.white.cgColor,
-                             UIColor.white.cgColor,
-                             UIColor.white.cgColor,
-                             UIColor.white.cgColor,
-                             UIColor.white.cgColor
-        ] as CFArray*/
-        static let colors = [UIColor.systemGreen.cgColor,
+        /*static let colors = [UIColor.systemGreen.cgColor,
                              UIColor.systemYellow.cgColor,
                              UIColor.systemOrange.cgColor,
                              UIColor.systemRed.cgColor,
                              UIColor.systemPurple.cgColor,
+                             UIColor.systemBlue.cgColor
+        ] as CFArray*/
+        static let colors = [UIColor.systemBlue.cgColor,
+                             UIColor.systemBlue.cgColor,
+                             UIColor.systemBlue.cgColor,
+                             UIColor.systemBlue.cgColor,
+                             UIColor.systemBlue.cgColor,
                              UIColor.systemBlue.cgColor
         ] as CFArray
 

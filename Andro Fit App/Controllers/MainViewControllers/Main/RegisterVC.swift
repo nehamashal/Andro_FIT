@@ -12,13 +12,11 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var emailTF:UITextField!
     @IBOutlet weak var passwordTF:UITextField!
     @IBOutlet weak var btnView: UIView!
-//    @IBOutlet weak var confirmPwd:UITextField!
     
     @IBOutlet weak var userImg: UIImageView!
     @IBOutlet weak var fullNameView:UIView!
     @IBOutlet weak var emailView:UIView!
     @IBOutlet weak var passwordView:UIView!
-//    @IBOutlet weak var confirmPwdView:UIView!
     
     @IBOutlet weak var signIn:UILabel!
     
@@ -58,35 +56,18 @@ class RegisterVC: UIViewController {
      
 }
 extension RegisterVC{
-    @IBAction func actionCountinue(_ sender:UIButton){
+    @IBAction func actionCountinue(_ sender:UIButton){        
+        let categoryIcon = UserDefaults.standard.data(forKey: "profileimg") ?? Data()
         if fullNameTF.text!.isEmpty {
             self.view.makeToast("Please fill your name",position: .center)
-        }else if emailTF.text!.isEmpty {
-            self.view.makeToast("Please fill Email", duration: 1.0, position: .center)
-        }else if !(emailTF.text?.validateEmailId(emailTF.text!))!{
-           self.view.makeToast("Please fill correct Email Id", duration: 1.0, position: .center)
-        }
-        else if passwordTF.text!.isEmpty {
-             self.view.makeToast("Please fill Phone Number", duration: 1.0, position: .center)
-            
-        }
-        else if passwordTF.text!.count < 10 {
-                self.view.makeToast("Please enter Valid Phone Number", duration: 1, position:.center)
-//        }else if confirmPwd.text!.isEmpty {
-//                self.view.makeToast("Please fill Confirm Password",position: .center)
-//        }else if passwordTF.text != confirmPwd.text {
-//                self.view.makeToast("Password and Confirm Password donot match",position: .center)
+        }else if categoryIcon == Data() {
+                self.view.makeToast("Please Upload your Picture",position: .center)
         }else {
             UserDefaults.standard.set(self.fullNameTF.text, forKey: "userName")
-            let vc = storyboard?.instantiateViewController(identifier: "ScanFaceVC") as! ScanFaceVC
+            let vc = storyboard?.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
-    @IBAction func loginBtn(_ sender:UIButton){
-        let vc = storyboard?.instantiateViewController(identifier: "LogInVC") as! LogInVC
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-  
     @IBAction func editButton(_ sender:UIButton){
         ImagePickerManager().pickImage(self){ image in
             self.userImg.image = image

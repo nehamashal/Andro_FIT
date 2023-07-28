@@ -5,12 +5,11 @@ target 'Andro Fit App' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
     pod 'IQKeyboardManagerSwift'
-    #pod 'AWSIoT'
-   # pod 'AWSMobileClient' #, '~>2.6.5'
-   # pod 'AWSS3'
-    #pod 'AWSRekognition'
-    pod 'FaceSDK'
     pod 'SideMenu'
+    pod 'TensorFlowLiteSwift'
+    pod 'GoogleMLKit/FaceDetection'
+    pod 'Alamofire’
+    
   # Pods for Andro Fit App
 
   target 'Andro Fit AppTests' do
